@@ -25,7 +25,7 @@ import { SubmitButton } from "@/app/components/SubmitButtons";
 import { revalidatePath } from "next/cache";
 
 async function getData(userId: string) {
-  const data = await prisma.user.findUnique({
+  const data = await prisma.user.findFirst({
     where: {
       id: userId,
     },

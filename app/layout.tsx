@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 async function getData(userId: string) {
 
   if(userId) {
-    const data = await prisma.user.findUnique({
+    const data = await prisma.user.findFirst({
       where: {
         id: userId
       },
