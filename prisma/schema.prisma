@@ -1,0 +1,75 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  karma String?
+  expirience String?
+  id   String  @id @unique
+  name String?
+  email String?
+  stripeCustromeId String? @unique
+  colorSchema String @default("tema-zinc")
+  shortVision String?
+  persDescription String?
+  level String?
+  frofileImage String?
+}
+
+model CharsOfPers {
+  id   String  @id @unique
+  userName String?
+  userId String
+  PhysBody String?
+  PsyBody String?
+  PsyMind String?
+  PhysMind String?
+  PsyInt String?
+  PhysInt String?
+  PsyRazum String?
+  PsyKrasota String?
+  PhysRzum String?
+  PhysKrasota String?
+}
+
+model Skills {
+  id   String  @id @unique 
+  userId String
+  name String?
+  level String?
+  talants String?
+}
+
+model Inventory {
+  id   String  @id @unique
+  userId String
+  name String?
+  imageURL String?
+  description String?
+}
+
+model Spells {
+  id   String  @id @unique
+  userId String
+  name String?
+  imageURL String?
+  description String?
+}
+
+
+model eventPage {
+  id   String  @id @unique
+  imageUrl String?
+}
