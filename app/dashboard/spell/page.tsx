@@ -27,7 +27,7 @@ export default async function SpellsPage() {
     <div className="w-full h-full flex justify-center">
         
 
-        <div className=" grid grid-cols-3 gap-x-3">
+        <div className=" grid grid-cols-2">
             {
                 data.map((el, indx) => (
                     <div key={indx}
