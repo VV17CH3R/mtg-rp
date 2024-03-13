@@ -15,6 +15,7 @@ async function getData(userId: string) {
         level: true,
         expirience: true,
         frofileImage: true,
+        look: true
       },
     });
   
@@ -39,24 +40,32 @@ export default async function DashboardPage() {
           height={420}
           className="h-full w-full object-cover object-center"
         />
-        <span className=" absolute text-4xl font-extrabold bg-background/70 left-0 top-0 rounded-br-lg px-3 py-1.5  uppercase tracking-wider text-primary">
-          {data?.level}
+        <span className=" absolute text-4xl font-extrabold bg-background/80 left-0 top-0 rounded-br-lg px-3 py-1.5  uppercase tracking-wider text-primary">
+          {data?.level ?? "1"}
         </span>
-        <span className=" absolute right-0 text-muted-foreground bottom-0 rounded-tl-lg bg-background/70 px-3 py-1.5 text-xs uppercase tracking-wider text-white">
-          Опыт: <span className=" text-xl font-bold ">{data?.expirience}</span>
+        <span className=" absolute right-0 text-muted-foreground bottom-0 rounded-tl-lg bg-background/80 px-3 py-1.5 text-xs uppercase tracking-wider ">
+          Опыт: <span className=" text-xl font-bold ">{data?.expirience ?? "0"}</span>
         </span>
-        <span className=" absolute text-xs text-muted-foreground left-0 bottom-0 rounded-tr-lg bg-background/70  px-3 py-1.5  uppercase tracking-wider text-white">
-          Карма: <span className=" text-xl font-bold ">{data?.karma}</span>
+        <span className=" absolute text-xs text-muted-foreground left-0 bottom-0 rounded-tr-lg bg-background/80  px-3 py-1.5  uppercase tracking-wider ">
+          Карма: <span className=" text-xl font-bold ">{data?.karma ?? "0"}</span>
         </span>
       </div>
 
         <div className="text-primary text-center py-2  text-2xl font-semibold">
-            {data?.name} <br /> <span className="text-muted-foreground text-base"> {`(${data?.shortVision})`} </span>
+            {data?.name} <br /> <span className="text-muted-foreground text-base"> {`( ${data?.shortVision ?? " новый персонаж "} )`} </span>
         </div>
 
       <div className="flex text-sm  justify-center text-center">
+        <h3 className="text-primary/70 pr-3 text-xs">Слухи:</h3>
         <p>
-            {data?.persDescription}
+            {data?.persDescription ?? " "}
+        </p>
+
+      </div>
+      <div className="flex text-sm  mt-3 justify-center text-center">
+      <h3 className="text-primary/70 pr-3 text-xs">Внешний вид:</h3>
+        <p>
+            {data?.look ?? " "}
         </p>
 
       </div>

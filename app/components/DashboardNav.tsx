@@ -6,7 +6,7 @@ export const navItems = [
   { name: "На главную", href: "/dashboard", icon: Home },
   { name: "Характеристики", href: "/dashboard/char", icon: Crown },
   { name: "Навыки", href: "/dashboard/skills", icon: Axe },
-  { name: "Инвентарь", href: "/dashboard/inventory", icon: Backpack },
+  { name: "Артефакты", href: "/dashboard/inventory", icon: Backpack },
   { name: "Заклинания", href: "/dashboard/spell", icon: ScrollText },
   { name: "Настройки", href: "/dashboard/settings", icon: Settings },
 ];

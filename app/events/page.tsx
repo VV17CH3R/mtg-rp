@@ -41,8 +41,8 @@ h-[570px]
             <div className="w-[5%] absolute -z-5 h-full top-0 right-0 bg-background"></div>
           </div>
 
-          <div className="bg-background p-8  absolute bottom-0  h-[44%] w-full ">
-            
+          <div className="bg-background px-3 text-center text-primary font-bold text-2xl absolute bottom-0  h-[44%] w-full ">
+            {data?.eventName ?? ""}
           </div>
         </div>
       </div>

@@ -66,17 +66,18 @@ export default async function DashboardLayout({
 
   const user = await getUser();
 
-  // if (!user) {
-  //   return redirect("/");
-  // }
+  if (!user) {
+    return redirect("/");
+  }
 
-  // await getData({
-  //   email: user.email as string,
-  //   firstName: user.given_name as string,
-  //   id: user.id as string,
-  //   lastName: user.family_name as string,
-  //   profileImage: user.picture,
-  // });
+  await getData({
+    email: user.email as string,
+    firstName: user.given_name as string,
+    id: user.id as string,
+    lastName: user.family_name as string,
+    profileImage: user.picture,
+  });
+
 
   return (
     <div className="flex flex-col space-x-6 mt-10">

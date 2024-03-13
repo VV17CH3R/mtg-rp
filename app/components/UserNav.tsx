@@ -17,7 +17,7 @@ export const navPers = [
   { name: "Профиль", href: "/dashboard", icon: Castle },
   { name: "Характеристики", href: "/dashboard/char", icon: Crown },
   { name: "Навыки", href: "/dashboard/skills", icon: Axe },
-  { name: "Инвентарь", href: "/dashboard/inventory", icon: Backpack },
+  { name: "Атефакты", href: "/dashboard/inventory", icon: Backpack },
   { name: "Заклинания", href: "/dashboard/spell", icon: ScrollText },
   { name: "Настройки", href: "/dashboard/settings", icon: Settings },
 ];

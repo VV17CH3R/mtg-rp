@@ -34,7 +34,8 @@ async function getData(userId: string) {
       email: true,
       colorSchema: true,
       persDescription: true,
-      shortVision: true
+      shortVision: true,
+      look: true
     },
   });
 
@@ -55,6 +56,7 @@ export default async function SettingsPage() {
     const colorSchema = formData.get("color") as string;
     const persDescription = formData.get("persDescription") as string;
     const shortVision = formData.get("shortVision") as string;
+    const look = formData.get("look") as string;
 
     await prisma.user.update({
         where: {
@@ -64,7 +66,8 @@ export default async function SettingsPage() {
             name: name ?? undefined,
             colorSchema: colorSchema ?? undefined,
             persDescription: persDescription ?? undefined,
-            shortVision: shortVision ?? undefined
+            shortVision: shortVision ?? undefined,
+            look: look ?? undefined,
         }
     })
 
@@ -108,12 +111,23 @@ export default async function SettingsPage() {
               </div>
               <div className="space-y-2">
                 <div className="space-y-1">
-                  <Label>Описание персонажа</Label>
+                  <Label>Слухи о персонаже</Label>
                   <Textarea
                     id="persDescription"
                     rows={5}
                     name="persDescription"
                     defaultValue={data?.persDescription ?? ""}
+                  />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="space-y-1">
+                  <Label>Внешний вид</Label>
+                  <Textarea
+                    id="look"
+                    rows={5}
+                    name="look"
+                    defaultValue={data?.look ?? ""}
                   />
                 </div>
               </div>

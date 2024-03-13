@@ -5,7 +5,7 @@ export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
     typescript: true,
 });
 
-export const getStripeSeesion = async ({priceId, domainUrl, customerId}: {priceId: string, domainUrl: string, customerId: string}) => {
+export const getStripeSession = async ({priceId, domainUrl, customerId}: {priceId: string, domainUrl: string, customerId: string}) => {
 
     const session = await stripe.checkout.sessions.create({
         customer: customerId,
@@ -20,7 +20,7 @@ export const getStripeSeesion = async ({priceId, domainUrl, customerId}: {priceI
             name: "auto"
         },
         success_url: `${domainUrl}/payment/success`,
-        cancel_url: `${domainUrl}/payment/cancel`
+        cancel_url: `${domainUrl}/payment/cancelled`
     })
 
     return session.url as string;

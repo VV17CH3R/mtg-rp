@@ -71,7 +71,7 @@ export default async function CharactPage() {
                     {data?.PhysInt ?? "-"}
                 </div>
                 <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-                    <span className="font-bold">Интелект</span> <br /> <span className="text-sm text-muted-foreground">{`(практические знания,`} <br /> {`память энерго-потоков)`}</span>
+                    <span className="font-bold">Интеллект</span> <br /> <span className="text-sm text-muted-foreground">{`(практические знания,`} <br /> {`память энерго-потоков)`}</span>
                 </div>
                 <div className=" flex justify-center items-center text-4xl">
                     {data?.PsyInt ?? "-"}

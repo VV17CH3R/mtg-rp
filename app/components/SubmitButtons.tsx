@@ -22,3 +22,21 @@ export function SubmitButton() {
         </>
     )
 }
+
+export function StripeSubButton() {
+    const { pending } = useFormStatus();
+
+    return (
+        <>
+            {pending ? (
+                <Button disabled  className="m-auto w-full" >
+                    <Loader2 className="mr-2 w-4 h-4 animate-spin" />Пожалуйста подождите...
+                </Button>
+            ) : (
+                <Button type="submit" className="w-full">
+                    Подписаться 
+                </Button>
+            )}
+        </>
+    )
+}

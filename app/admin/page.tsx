@@ -13,14 +13,15 @@ export default function AdminPage() {
         "use server";
     
         const event = formData.get("event") as string;
-
+        const eventName = formData.get("eventName") as string;
     
         await prisma.eventPage.update({
             where: {
                 id: "32167"
             },
             data: {
-                imageUrl: event ?? undefined
+                imageUrl: event ?? undefined,
+                eventName: eventName ?? undefined,
             }
         })
     
@@ -102,6 +103,13 @@ export default function AdminPage() {
                     type="text" 
                     defaultValue={""}
                     placeholder="Event..."
+                  />
+                  <Input 
+                    id="eventName" 
+                    name="eventName" 
+                    type="text" 
+                    defaultValue={""}
+                    placeholder="Название..."
                   />
                 </div>
               </div>

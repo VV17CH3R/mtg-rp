@@ -26,6 +26,10 @@ model User {
   persDescription String?
   level String?
   frofileImage String?
+  Subscription Subscribtion?
+  phisical String?
+  spiritual String?
+  look String?
 }
 
 model CharsOfPers {
@@ -72,4 +76,18 @@ model Spells {
 model eventPage {
   id   String  @id @unique
   imageUrl String?
+  eventName String?
+}
+
+model Subscribtion {
+  stripeSubId   String  @id @unique
+  interval String
+  status String
+  planId String
+  startPeriod Int
+  endPeriod Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user User @relation(fields: [userId], references: [id])
+  userId String  @unique
 }
