@@ -35,7 +35,8 @@ async function getData(userId: string) {
       colorSchema: true,
       persDescription: true,
       shortVision: true,
-      look: true
+      look: true,
+      loyality: true,
     },
   });
 
@@ -57,6 +58,7 @@ export default async function SettingsPage() {
     const persDescription = formData.get("persDescription") as string;
     const shortVision = formData.get("shortVision") as string;
     const look = formData.get("look") as string;
+    const loyality = formData.get("loyality") as string;
 
     await prisma.user.update({
         where: {
@@ -65,9 +67,10 @@ export default async function SettingsPage() {
         data: {
             name: name ?? undefined,
             colorSchema: colorSchema ?? undefined,
-            persDescription: persDescription ?? undefined,
-            shortVision: shortVision ?? undefined,
-            look: look ?? undefined,
+            persDescription: persDescription ?? "Образ закутанный мешковидной тканью",
+            shortVision: shortVision ?? "Незнакомец",
+            look: look ?? "-",
+            loyality: loyality ?? "Неизвестные намеренья",
         }
     })
 
@@ -128,6 +131,18 @@ export default async function SettingsPage() {
                     rows={5}
                     name="look"
                     defaultValue={data?.look ?? ""}
+                  />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="space-y-1">
+                  <Label>Верность</Label>
+                  <Textarea 
+                    id="loyality" 
+                    name="loyality" 
+                    rows={5}
+                    defaultValue={data?.loyality ?? ""}
+                    placeholder="Верность идеологии..."
                   />
                 </div>
               </div>

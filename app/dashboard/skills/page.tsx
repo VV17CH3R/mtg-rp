@@ -20,16 +20,15 @@ export default async function CharactPage() {
   
     const data = await getData(user?.id as string);
 
-    if(!data) {
+    if(data.length == 0) {
         await prisma.skills.create({
             data: {        
-                id: user?.given_name as string,
+                id: user?.id as string,
                 userId: user?.id as string,
             },
           });
     }
 
-    console.log(user)
 
     return (
         <div className="flex flex-col p-3 w-full h-full justify-center">

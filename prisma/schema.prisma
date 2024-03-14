@@ -30,6 +30,7 @@ model User {
   phisical String?
   spiritual String?
   look String?
+  loyality String?
 }
 
 model CharsOfPers {

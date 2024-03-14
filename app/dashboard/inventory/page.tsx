@@ -21,6 +21,15 @@ export default async function InventoryPage() {
     const user = await getUser();
   
     const data = await getData(user?.id as string);
+    
+    if(data.length == 0) {
+      await prisma.inventory.create({
+          data: {        
+              id: user?.id as string,
+              userId: user?.id as string,
+          },
+        });
+  }
 
 
   return (
@@ -42,7 +51,7 @@ export default async function InventoryPage() {
                       width={133}
                       height={190}
                       alt="card"
-                      src={el.imageURL as string ?? "https://mtgtrade.net/cards/afr/395.jpg"}
+                      src={el.imageURL as string ?? "https://mtgtrade.net/cards/pip/105.jpg"}
                     />
                     <div className="flex w-full h-full flex-col justify-between">
                       <div className="bg-background text-center h-[9.5%] w-full top-0">

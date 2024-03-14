@@ -15,7 +15,8 @@ async function getData(userId: string) {
         level: true,
         expirience: true,
         frofileImage: true,
-        look: true
+        look: true,
+        loyality: true,
       },
     });
   
@@ -34,13 +35,13 @@ export default async function DashboardPage() {
     <div className="w-full h-full flex flex-col items-center justify-center">
       <div className="relative w-[320px] h-[320px] overflow-hidden rounded-lg bg-gray-100 lg:col-span-4">
         <Image
-          src={data?.frofileImage as string ?? "https://ncovgggrjiogvnverryj.supabase.co/storage/v1/object/public/content-for-sloweska/default-portets.jpg?t=2024-02-26T14%3A15%3A35.839Z" }
+          src={data?.frofileImage as string ?? "https://ncovgggrjiogvnverryj.supabase.co/storage/v1/object/public/content-for-sloweska/0ecbc2d3-57c3-425e-9dae-4ff44c64af23.jfif?t=2024-03-14T14%3A30%3A23.274Z" }
           alt="portrets"
           width={420}
           height={420}
           className="h-full w-full object-cover object-center"
         />
-        <span className=" absolute text-4xl font-extrabold bg-background/80 left-0 top-0 rounded-br-lg px-3 py-1.5  uppercase tracking-wider text-primary">
+        <span className=" absolute text-4xl font-extrabold bg-background/80 left-0 top-0 rounded-br-xl px-3 py-1.5  uppercase tracking-wider text-gray-700">
           {data?.level ?? "1"}
         </span>
         <span className=" absolute right-0 text-muted-foreground bottom-0 rounded-tl-lg bg-background/80 px-3 py-1.5 text-xs uppercase tracking-wider ">

@@ -8,7 +8,7 @@ import { redirect } from "next/navigation";
 import { StripeSubButton } from "@/app/components/SubmitButtons";
 
 const inventoryManual = [
-    {name:"Еженедельная сеесия (4-5 часов)"},
+    {name:"Еженедельная сеcсия (4-5 часов)"},
     {name:"Доступ к приложению"},
     {name:"Прямые консультации по ЛОРу"},
     {name:"Новости мультивселенной онлайн"},

@@ -22,6 +22,15 @@ export default async function SpellsPage() {
   
     const data = await getData(user?.id as string);
 
+    if(data.length == 0) {
+      await prisma.spells.create({
+          data: {        
+              id: user?.id as string,
+              userId: user?.id as string,
+          },
+        });
+  }
+
 
   return (
     <div className="w-full h-full flex justify-center">
