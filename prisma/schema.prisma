@@ -92,3 +92,17 @@ model Subscribtion {
   user User @relation(fields: [userId], references: [id])
   userId String  @unique
 }
+
+model allArts {
+  id   String  @id @unique
+  imageUrl String?
+  artifactName String?
+  shortDescr String?
+}
+
+model allSpels {
+  id   String  @id @unique
+  imageUrl String?
+  spellName String?
+  shortDescr String?
+}

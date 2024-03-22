@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button";
 import prisma from "../lib/db"
 
 import Image from "next/image";
+import Link from "next/link";
 
 async function getData() {
     const data = await prisma.eventPage.findFirst();
@@ -46,6 +48,13 @@ h-[570px]
           </div>
         </div>
       </div>
+      <Link href="/events">
+        <div>
+        <Button className="w-[50vw]">Обновить</Button>
+        </div>
+        
+      </Link>
+      
     </div>
   );
 }

@@ -5,7 +5,6 @@ import { ThemeProvider } from "./components/theme-provider";
 import { NavBar } from "./components/NavBar";
 import prisma from "./lib/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import FooterBar from "./components/FooterBar";
 
 const inter = Inter({ subsets: ["latin"] });
 

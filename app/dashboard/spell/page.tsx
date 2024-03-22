@@ -42,14 +42,14 @@ export default async function SpellsPage() {
                     <div key={indx}
                     className="relative mt-[-18px] rounded-2xl 
             
-            w-[133px]
-            h-[190px] 
+            w-[160px]
+            h-[228px] 
             "
                   >
                     <Image
                       className="rounded-2xl absolute -z-10"
-                      width={133}
-                      height={190}
+                      width={160}
+                      height={228}
                       alt="card"
                       src={el.imageURL as string ?? "https://mtgtrade.net/cards/war/193.jpg"}
                     />

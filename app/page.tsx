@@ -4,14 +4,14 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { redirect } from "next/navigation";
 import Hero from "./components/MainVideoPlayer";
 import FooterBar from "./components/FooterBar";
+import Link from "next/link";
 
 export default async function Home() {
 
   const { isAuthenticated } = await getKindeServerSession();
 
-  if(await isAuthenticated()) {
-    return redirect('/dashboard');
-  }
+  const isAuth = await isAuthenticated();
+
 
   return (
     <>
@@ -21,11 +21,22 @@ export default async function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <div>
             <div className="flex mb-6 justify-center max-w-sm mx-auto">
-              <RegisterLink className="w-full">
+              {
+                isAuth ? (
+                  <Link className="w-full" href="/lore">
+                    <Button size="lg" className=" w-full">
+                      Библиотека
+                    </Button>
+                  </Link>
+                ) : ( 
+                  <RegisterLink className="w-full">
                 <Button size="lg" className=" w-full">
                   Создать персонажа
                 </Button>
-              </RegisterLink>
+              </RegisterLink> 
+                )
+              }
+              
             </div>
             <p className="text-muted-foreground my-6">
               Доборо пожаловать дорогой друг в мир Magick The Gathering. <br />

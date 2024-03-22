@@ -1,14 +1,9 @@
 import prisma from "../../lib/db"
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Image from "next/image";
 
 
-  async function getData(userId: string) {
-      const data = await prisma.inventory.findMany({
-        where: {
-          userId: userId,
-        }
-      });
+  async function getData() {
+      const data = await prisma.allArts.findMany();
     
       return data;
     }
@@ -16,27 +11,14 @@ import Image from "next/image";
 
 export default async function InventoryPage() {
 
-    const { getUser } = getKindeServerSession();
-  
-    const user = await getUser();
-  
-    const data = await getData(user?.id as string);
+    const data = await getData();
     
-    if(data.length == 0) {
-      await prisma.inventory.create({
-          data: {        
-              id: user?.id as string,
-              userId: user?.id as string,
-          },
-        });
-  }
-
 
   return (
     <div className="w-full h-full flex justify-center">
         
 
-        <div className="  grid grid-cols-2">
+        <div className=" mt-8   grid grid-cols-2">
             {
                 data.map((el, indx) => (
                     <div key={indx}
@@ -51,7 +33,7 @@ export default async function InventoryPage() {
                       width={160}
                       height={228}
                       alt="card"
-                      src={el.imageURL as string ?? "https://mtgtrade.net/cards/pip/105.jpg"}
+                      src={el.imageUrl as string ?? ""}
                     />
                     <div className="flex w-full h-full flex-col justify-between">
                       <div className="bg-background text-center h-[9.5%] w-full top-0">
@@ -66,7 +48,10 @@ export default async function InventoryPage() {
                       </div>
             
                       <div className="bg-background text-primary font-extrabold text-xs text-center absolute bottom-0  h-[44%] w-full ">
-                             {el.name}
+                        <div className="w-full">
+                            <p className="w-full pt-1">{el.artifactName}</p>
+                            <p className="mt-1 px-2 max-w-[150px] md:max-w-[333px] break-words text-[8px] text-gray-500 line-clamp-2">{el.shortDescr}</p>
+                        </div>     
                       </div>
                     </div>
                   </div>
