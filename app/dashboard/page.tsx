@@ -17,6 +17,8 @@ async function getData(userId: string) {
         frofileImage: true,
         look: true,
         loyality: true,
+        spiritual: true,
+        phisical: true,
       },
     });
   
@@ -41,14 +43,11 @@ export default async function DashboardPage() {
           height={420}
           className="h-full w-full object-cover object-center"
         />
-        <span className=" absolute text-4xl font-extrabold bg-background/80 left-0 top-0 rounded-br-xl px-3 py-1.5  uppercase tracking-wider text-gray-700">
-          {data?.level ?? "1"}
+        <span className=" absolute text-4xl font-extrabold bg-red-500/80 left-0 top-0 rounded-br-xl px-3 py-1.5  uppercase tracking-wider text-gray-700">
+          {data?.phisical ?? "1"}
         </span>
-        <span className=" absolute right-0 text-muted-foreground bottom-0 rounded-tl-lg bg-background/80 px-3 py-1.5 text-xs uppercase tracking-wider ">
-          Опыт: <span className=" text-xl font-bold ">{data?.expirience ?? "0"}</span>
-        </span>
-        <span className=" absolute text-xs text-muted-foreground left-0 bottom-0 rounded-tr-lg bg-background/80  px-3 py-1.5  uppercase tracking-wider ">
-          Карма: <span className=" text-xl font-bold ">{data?.karma ?? "0"}</span>
+        <span className=" absolute text-4xl font-extrabold bg-blue-500/80 right-0 top-0 rounded-bl-xl px-3 py-1.5  uppercase tracking-wider text-gray-700">
+          {data?.spiritual ?? "1"}
         </span>
       </div>
 
