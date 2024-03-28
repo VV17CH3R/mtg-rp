@@ -106,3 +106,10 @@ model allSpels {
   spellName String?
   shortDescr String?
 }
+
+model battlefieldPage {
+  id   String  @id @unique
+  imageUrl String?
+  quantity String?
+  name String?
+}

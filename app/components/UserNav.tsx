@@ -9,7 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Axe, Backpack, Castle, CreditCard, Crown, DoorClosed, Home, ScrollText, Settings, SignpostBig } from "lucide-react";
+import { Axe, Backpack, Castle, CreditCard, Crown, DoorClosed, Home, ScrollText, Settings, SignpostBig, Swords } from "lucide-react";
 import Link from "next/link";
 import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
@@ -24,6 +24,7 @@ export const navPers = [
 
 export const navMain = [
   { name: "Ивент", href: "/events", icon: SignpostBig },
+  { name: "Поле боя", href: "/battlefield", icon: Swords },
 ];
 
 export function UserNav({

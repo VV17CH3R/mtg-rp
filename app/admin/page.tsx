@@ -86,6 +86,36 @@ export default function AdminPage() {
     
       }
 
+      async function postBattleFieldEl(formData: FormData) {
+        "use server";
+    
+        const img = formData.get("img") as string;
+        const quant = formData.get("quant") as string;
+        const enemyName = formData.get("enemyName") as string;
+
+    
+        await prisma.battlefieldPage.create({
+            data: {
+              id: enemyName + quant,
+              name: enemyName,
+              imageUrl: img,
+              quantity: quant,
+            }
+        })
+    
+        revalidatePath("/admin");
+    
+      }
+
+      async function clearBattleFieldEl() {
+        "use server";
+    
+        await prisma.battlefieldPage.deleteMany();
+    
+        revalidatePath("/admin");
+    
+      }
+
  return (
     <div>
         <form action={postEvent}>
@@ -111,6 +141,53 @@ export default function AdminPage() {
                     defaultValue={""}
                     placeholder="Название..."
                   />
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+                <SubmitButton />
+            </CardFooter>
+          </form>
+
+          <form action={postBattleFieldEl}>
+            <CardContent>
+              <div className="space-y-2">
+                <div className="space-y-1">
+                  <Label>Добавить врага на поле боя</Label>
+                  <Input 
+                    id="img" 
+                    name="img" 
+                    type="text" 
+                    defaultValue={""}
+                    placeholder="Картинка..."
+                  />
+                  <Input 
+                    id="quant" 
+                    name="quant" 
+                    type="text" 
+                    defaultValue={""}
+                    placeholder="Количество..."
+                  />
+                  <Input 
+                    id="enemyName" 
+                    name="enemyName" 
+                    type="text" 
+                    defaultValue={""}
+                    placeholder="Имя..."
+                  />
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+                <SubmitButton />
+            </CardFooter>
+          </form>
+
+          <form action={clearBattleFieldEl}>
+            <CardContent>
+              <div className="space-y-2">
+                <div className="space-y-1">
+                  <Label>Очистить поле боя</Label>
                 </div>
               </div>
             </CardContent>
