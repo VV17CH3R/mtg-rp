@@ -116,6 +116,36 @@ export default function AdminPage() {
     
       }
 
+      async function postAstroEl(formData: FormData) {
+        "use server";
+    
+        const img = formData.get("img") as string;
+        const descr = formData.get("desc") as string;
+        const name = formData.get("name") as string;
+
+    
+        await prisma.astrologyPage.create({
+            data: {
+              id: name + descr,
+              name: name,
+              imageUrl: img,
+              descr: descr,
+            }
+        })
+    
+        revalidatePath("/admin");
+    
+      }
+
+      async function clearAstro() {
+        "use server";
+    
+        await prisma.astrologyPage.deleteMany();
+    
+        revalidatePath("/admin");
+    
+      }
+
  return (
     <div>
         <form action={postEvent}>
@@ -281,6 +311,54 @@ export default function AdminPage() {
                     defaultValue={""}
                     placeholder="Владелец..."
                   />
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+                <SubmitButton />
+            </CardFooter>
+          </form>
+
+
+          <form action={postAstroEl}>
+            <CardContent>
+              <div className="space-y-2">
+                <div className="space-y-1">
+                  <Label>Добавить влияние планет</Label>
+                  <Input 
+                    id="img" 
+                    name="img" 
+                    type="text" 
+                    defaultValue={""}
+                    placeholder="Картинка..."
+                  />
+                  <Input 
+                    id="desc" 
+                    name="desc" 
+                    type="text" 
+                    defaultValue={""}
+                    placeholder="Описание..."
+                  />
+                  <Input 
+                    id="name" 
+                    name="name" 
+                    type="text" 
+                    defaultValue={""}
+                    placeholder="Название..."
+                  />
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+                <SubmitButton />
+            </CardFooter>
+          </form>
+
+          <form action={clearAstro}>
+            <CardContent>
+              <div className="space-y-2">
+                <div className="space-y-1">
+                  <Label>Очистить астрологию</Label>
                 </div>
               </div>
             </CardContent>

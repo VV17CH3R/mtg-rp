@@ -50,7 +50,7 @@ export default async function InventoryPage() {
                       <div className="bg-background text-primary font-extrabold text-xs text-center absolute bottom-0  h-[44%] w-full ">
                         <div className="w-full">
                             <p className="w-full pt-1">{el.artifactName}</p>
-                            <p className="mt-1 px-2 max-w-[150px] md:max-w-[333px] break-words text-[8px] text-gray-500 line-clamp-2">{el.shortDescr}</p>
+                            <p className="mt-1 px-2 max-w-[150px] md:max-w-[333px] break-words text-[8px] text-gray-500 line-clamp-3">{el.shortDescr}</p>
                         </div>     
                       </div>
                     </div>

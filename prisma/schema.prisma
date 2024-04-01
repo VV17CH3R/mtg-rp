@@ -113,3 +113,10 @@ model battlefieldPage {
   quantity String?
   name String?
 }
+
+model astrologyPage {
+  id   String  @id @unique
+  imageUrl String?
+  descr String?
+  name String?
+}

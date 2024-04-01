@@ -1,15 +1,15 @@
-import prisma from "../../lib/db"
+import prisma from "../lib/db"
 import Image from "next/image";
 
 
   async function getData() {
-      const data = await prisma.allSpels.findMany();
+      const data = await prisma.astrologyPage.findMany();
     
       return data;
     }
 
 
-export default async function InventoryPage() {
+export default async function AstrologyPage() {
 
     const data = await getData();
     
@@ -49,8 +49,8 @@ export default async function InventoryPage() {
             
                       <div className="bg-background text-primary font-extrabold text-xs text-center absolute bottom-0  h-[44%] w-full ">
                         <div className="w-full">
-                            <p className="w-full pt-1">{el.spellName}</p>
-                            <p className="mt-1 px-2 max-w-[150px] md:max-w-[333px] break-words text-[8px] text-gray-500 line-clamp-3">{el.shortDescr}</p>
+                            <p className="w-full text-primary/70 pt-1">{el.name}</p>
+                            <p className="mt-1 px-2 max-w-[150px] md:max-w-[333px] break-words text-[8px] text-gray-500 line-clamp-3">{el.descr}</p>
                         </div>     
                       </div>
                     </div>
