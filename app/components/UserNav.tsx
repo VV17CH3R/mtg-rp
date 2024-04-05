@@ -9,7 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Axe, Backpack, Castle, Crown, DoorClosed, Calendar, ScrollText, Settings, SignpostBig, Swords } from "lucide-react";
+import { Axe, Backpack, Castle, Crown, DoorClosed, Calendar, ScrollText, Settings, SignpostBig, Swords, Map } from "lucide-react";
 import Link from "next/link";
 import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
@@ -26,6 +26,7 @@ export const navMain = [
   { name: "Ивент", href: "/events", icon: SignpostBig },
   { name: "Поле боя", href: "/battlefield", icon: Swords },
   { name: "Календарь", href: "/astrology", icon: Calendar },
+  { name: "Карта мира", href: "/maps/phyrexia", icon: Map },
 ];
 
 export function UserNav({
@@ -38,7 +39,7 @@ export function UserNav({
   image: string;
 }) {
   return (
-    <nav>
+    <nav className="h-full">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" className="relative rounded-full h-10 w-10">
@@ -48,7 +49,7 @@ export function UserNav({
             </Avatar>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56 " align="end" forceMount>
+        <DropdownMenuContent className="w-56  h-full" align="end" forceMount>
           <DropdownMenuLabel>
             <div className="flex flex-col space-y-1">
               <p className="text-sm font-md leading-none">
@@ -75,7 +76,7 @@ export function UserNav({
               </DropdownMenuItem>
             ))}
           </DropdownMenuGroup>
-
+          <DropdownMenuSeparator />
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             {navPers.map((el, indx) => (

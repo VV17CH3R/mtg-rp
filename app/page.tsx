@@ -16,7 +16,7 @@ export default async function Home() {
   return (
     <>
       <Hero/>
-    <section className="flex  justify-center h-full">
+    <section className="flex  justify-center h-[60vh]">
       <div className="absolute bottom-0  items-center w-full px-5 py-12 lg:px-16 max-w-7xl md:px-12">
         <div className="max-w-3xl mx-auto text-center">
           <div>

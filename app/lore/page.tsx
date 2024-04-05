@@ -6,7 +6,7 @@ import Link from "next/link";
 const loreItems = [
   { name: "Артефакты", href: "/lore/all-arts", icon: Backpack },
   { name: "Заклинания", href: "/lore/all-spells", icon: ScrollText },
-  { name: "Фирексия", href: "https://mtg.fandom.com/ru/wiki/Новая_Фирексия_(мир)", icon: Book },
+  { name: "Фирексия", href: "https://vk.com/@worlds_of_dominia-putevoditel-po-fireksii", icon: Book },
 ];
 
 export default function DashboardNav() {
