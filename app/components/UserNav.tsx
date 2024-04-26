@@ -14,19 +14,16 @@ import Link from "next/link";
 import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 export const navPers = [
-  { name: "Профиль", href: "/dashboard", icon: Castle },
+  { name: "Визитка", href: "/dashboard", icon: Castle },
   { name: "Характеристики", href: "/dashboard/char", icon: Crown },
-  { name: "Навыки", href: "/dashboard/skills", icon: Axe },
-  { name: "Атефакты", href: "/dashboard/inventory", icon: Backpack },
-  { name: "Заклинания", href: "/dashboard/spell", icon: ScrollText },
-  { name: "Настройки", href: "/dashboard/settings", icon: Settings },
+  { name: "Таланты", href: "/dashboard/skills", icon: Axe },
+  { name: "Инвентарь", href: "/dashboard/inventory", icon: Backpack },
+  { name: "Подробная информация", href: "/dashboard/settings", icon: Settings },
 ];
 
 export const navMain = [
   { name: "Ивент", href: "/events", icon: SignpostBig },
-  { name: "Поле боя", href: "/battlefield", icon: Swords },
   { name: "Календарь", href: "/astrology", icon: Calendar },
-  { name: "Карта мира", href: "/maps/phyrexia", icon: Map },
 ];
 
 export function UserNav({

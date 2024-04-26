@@ -43,46 +43,46 @@ export default async function CharactPage() {
             </div>
             <div className="grid-cols-4 mt-8 gap-y-3 bg-white/10 p-3 rounded-md grid-rows-5 grid">
                 <div className=" flex justify-center items-center text-4xl">
-                    {data?.PhysBody ?? "5"}
+                    {data?.PhysBody ?? "1"}
                 </div>
                 <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
                     <span className="font-bold">Тело</span> <br /> <span className="text-sm text-muted-foreground">{`(крепкость,`} <br /> {`плотность тела)`}</span>
                 </div>
                 <div className=" flex justify-center items-center text-4xl">
-                    {data?.PhysInt ?? "5"}
+                    {data?.PsyBody ?? "1"}
                 </div>
                 <div className=" flex justify-center items-center text-4xl">
-                    {data?.PhysMind ?? "5"}
+                    {data?.PhysMind ?? "1"}
                 </div>
                 <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
                     <span className="font-bold">Ум</span> <br /> <span className="text-sm text-muted-foreground">{`(рефлексы,`} <br /> {`мышление)`}</span>
                 </div>
                 <div className=" flex justify-center items-center text-4xl">
-                    {data?.PsyMind ?? "5"}
+                    {data?.PsyMind ?? "1"}
                 </div><div className=" flex justify-center items-center text-4xl">
-                    {data?.PhysKrasota ?? "5"}
+                    {data?.PhysKrasota ?? "1"}
                 </div>
                 <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
                     <span className="font-bold">Харизма</span> <br /> <span className="text-sm text-muted-foreground">{`(красота тела,`} <br /> {`красота речи)`}</span>
                 </div>
                 <div className=" flex justify-center items-center text-4xl">
-                    {data?.PsyKrasota ?? "5"}
+                    {data?.PsyKrasota ?? "1"}
                 </div><div className=" flex justify-center items-center text-4xl">
-                    {data?.PhysInt ?? "5"}
+                    {data?.PhysInt ?? "1"}
                 </div>
                 <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
                     <span className="font-bold">Интеллект</span> <br /> <span className="text-sm text-muted-foreground">{`(практические знания,`} <br /> {`память энерго-потоков)`}</span>
                 </div>
                 <div className=" flex justify-center items-center text-4xl">
-                    {data?.PsyInt ?? "5"}
+                    {data?.PsyInt ?? "1"}
                 </div><div className=" flex justify-center items-center text-4xl">
-                    {data?.PhysRzum ?? "5"}
+                    {data?.PhysRzum ?? "1"}
                 </div>
                 <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
                     <span className="font-bold">Разум</span> <br /> <span className="text-sm text-muted-foreground">{`(целеустремленность,`} <br /> {`терпеливость)`}</span>
                 </div>
                 <div className=" flex justify-center items-center text-4xl">
-                    {data?.PsyRazum ?? "5"}
+                    {data?.PsyRazum ?? "1"}
                 </div>
             </div>
         </div>

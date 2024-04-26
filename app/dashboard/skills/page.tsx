@@ -1,57 +1,109 @@
-import prisma from "../../lib/db";
+import { AddItemButton } from "@/app/components/SubmitButtons";
+import {
+    Card,
+    CardContent,
+    CardFooter,
+    CardHeader,
+    CardTitle
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-
-async function getData(userId: string) {
+import { revalidatePath } from "next/cache";
+import prisma from "../../lib/db";
+  
+  async function getData(userId: string) {
     const data = await prisma.skills.findMany({
       where: {
         userId: userId,
-      }
+      },
+      select: {
+        name: true,
+        level: true,
+      },
     });
   
     return data;
   }
-
-
-export default async function CharactPage() {
-
+  
+  export default async function SkillsPage() {
     const { getUser } = getKindeServerSession();
-
+  
     const user = await getUser();
   
     const data = await getData(user?.id as string);
-
-    if(data.length == 0) {
-        await prisma.skills.create({
-            data: {        
-                id: user?.id as string,
-                userId: user?.id as string,
-            },
-          });
+  
+    async function postData(formData: FormData) {
+      "use server";
+  
+      const name = formData.get("name") as string;
+      const level = formData.get("level") as string;
+  
+      await prisma.skills.create({
+          data: {
+              id: name + user?.id as string,
+              name: name  as string,
+              level: level  as string,
+              userId: user?.id as string
+          }
+      })
+  
+      revalidatePath("/", "layout");
+  
     }
-
-
+  
     return (
-        <div className="flex flex-col p-3 w-full h-full justify-center">
-            {
-                data?.map((el, indx) => (
-                    <div className="w-full max-w-sm flex flex-col justify-center" key={indx}> 
-                        <div className="flex justify-between"> 
-                        <h2 className="font-extrabold text-primary">
-                            {el.name}
-                        </h2>
-                        <h3 className="font-semibold">
-                            {el.level}
-                        </h3>
-                        </div>
-                        <p className="text-xs">Таланты:</p>
-                        <div className='text-sm  p-4 whitespace-pre-wrap'>
-                            
-                            {el.talants}
-                        </div>
+      <div className="grid items-start gap-8">
+        <div className="flex flex-col items-center justify-between px-2">
+          <Card className="w-full">
+            <form action={postData}>
+              <CardHeader>
+                <CardTitle className="text-center">Таланты</CardTitle>
+                {/* <CardDescription>Опишите своего персонажа</CardDescription> */}
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                    <div>
+                    {
+                    data.map((el, indx) => ( 
+                      <div className="flex mt-3 justify-between" key={indx}> 
+                        <div className="flex w-full justify-between">
+                          <div className=" text-xl font-semibold text-primary">{el.name} </div>
+                          <div className="mr-3 text-3xl font-bold">{el.level} </div>
+                        </div> 
+                      </div> 
+                    ))
+                  }
                     </div>
-                ))
-            }
+  
+                  <div className="space-y-1">
+                    <Label>Добавить талант</Label>
+  
+                    <div className="flex justify-center items-center">
+                    <Input 
+                      id="name" 
+                      name="name" 
+                      type="text" 
+                      placeholder="Талант..."
+                    />
+                    <Input 
+                        className="ml-3 w-[90px]"
+                      id="level" 
+                      name="level" 
+                      type="text" 
+                      placeholder="Ур."
+                    />
+                    </div> 
+                  </div>
+                </div>
+              </CardContent>
+              <CardFooter>
+                  <AddItemButton />
+              </CardFooter>
+            </form>
+          </Card>
         </div>
-    )
-
-}
+      </div>
+    );
+  }
+  

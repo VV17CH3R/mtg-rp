@@ -61,8 +61,7 @@ model Inventory {
   id   String  @id @unique
   userId String
   name String?
-  imageURL String?
-  description String?
+  quant String?
 }
 
 model Spells {
@@ -119,4 +118,10 @@ model astrologyPage {
   imageUrl String?
   descr String?
   name String?
+}
+
+model Gold {
+  id   String  @id @unique
+  userId String
+  quant String?
 }
