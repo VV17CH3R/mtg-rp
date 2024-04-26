@@ -76,7 +76,7 @@ import prisma from "../../lib/db";
                   }
                     </div>
   
-                  <div className="space-y-1">
+                  <div className="mt-12 space-y-1">
                     <Label>Добавить талант</Label>
   
                     <div className="flex justify-center items-center">

@@ -99,7 +99,7 @@ export default async function SkillsPage() {
                   <div>
                   {
                     data.map((el, indx) => ( 
-                      <div className="flex mt-3 justify-between" key={indx}> 
+                      <div className="flex mt-3 items-center justify-between" key={indx}> 
                         <div className="flex w-full justify-between">
                           <div className=" text-xl font-semibold text-primary">{el.name} </div>
                           <div className="mr-3 text-3xl font-bold">{el.quant} </div>
@@ -110,7 +110,7 @@ export default async function SkillsPage() {
                   }
                   </div>
 
-                <div className="space-y-1">
+                <div className=" mt-12 space-y-1">
                   <Label>Добавить предмет в инвернтарь</Label>
 
                   <div className="flex justify-center items-center">
@@ -133,7 +133,7 @@ export default async function SkillsPage() {
             </CardContent>
             <CardFooter>
                 <div className=" flex w-full mr-3 items-center justify-between">Золото: <Input 
-                      className="ml-3 w-[90px]"
+                      className="ml-8 w-[90px]"
                     id="gold" 
                     name="gold" 
                     type="text" 
