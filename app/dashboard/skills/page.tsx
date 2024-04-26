@@ -53,8 +53,8 @@ import prisma from "../../lib/db";
     }
   
     return (
-      <div className="grid items-start gap-8">
-        <div className="flex flex-col items-center justify-between px-2">
+      <div className="">
+        <div className="flex flex-col items-center justify-between ">
           <Card className="w-full">
             <form action={postData}>
               <CardHeader>
@@ -68,8 +68,8 @@ import prisma from "../../lib/db";
                     data.map((el, indx) => ( 
                       <div className="flex mt-3 justify-between" key={indx}> 
                         <div className="flex w-full justify-between">
-                          <div className=" text-xl font-semibold text-primary">{el.name} </div>
-                          <div className="mr-3 text-3xl font-bold">{el.level} </div>
+                          <div className=" text-lg font-semibold text-primary">{el.name} </div>
+                          <div className="mr-3 text-lg font-bold">{el.level} </div>
                         </div> 
                       </div> 
                     ))

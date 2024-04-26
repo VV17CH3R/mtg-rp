@@ -86,8 +86,8 @@ export default async function SkillsPage() {
 
 
   return (
-    <div className="grid items-start gap-8">
-      <div className="flex flex-col items-center justify-between px-2">
+    <div className="">
+      <div className="flex flex-col items-center justify-between">
         <Card className="w-full">
           <form action={postData}>
             <CardHeader>
@@ -132,7 +132,7 @@ export default async function SkillsPage() {
               </div>
             </CardContent>
             <CardFooter>
-                <div className=" flex w-full items-center justify-between">Золото: <Input 
+                <div className=" flex w-full mr-3 items-center justify-between">Золото: <Input 
                       className="ml-3 w-[90px]"
                     id="gold" 
                     name="gold" 

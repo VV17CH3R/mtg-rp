@@ -37,7 +37,7 @@ export function AddItemButton() {
                     <Loader2 className="mr-2 w-4 h-4 animate-spin" />Пожалуйста подождите...
                 </Button>
             ) : (
-                <Button type="submit" className="m-auto w-[200px]">
+                <Button type="submit" className="m-auto w-[100px]">
                     Сохранить
                 </Button>
             )}
