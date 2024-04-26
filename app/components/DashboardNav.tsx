@@ -1,14 +1,13 @@
 import { cn } from "@/lib/utils";
-import { Axe, Backpack, Crown, Home, ScrollText, Settings } from "lucide-react";
+import { Axe, Backpack, Castle, Crown, Home, ScrollText, Settings } from "lucide-react";
 import Link from "next/link";
 
 export const navItems = [
-  { name: "На главную", href: "/dashboard", icon: Home },
-  { name: "Характеристики", href: "/dashboard/char", icon: Crown },
-  { name: "Навыки", href: "/dashboard/skills", icon: Axe },
-  { name: "Артефакты", href: "/dashboard/inventory", icon: Backpack },
-  { name: "Заклинания", href: "/dashboard/spell", icon: ScrollText },
-  { name: "Настройки", href: "/dashboard/settings", icon: Settings },
+    { name: "Визитка", href: "/dashboard", icon: Castle },
+    { name: "Характеристики", href: "/dashboard/char", icon: Crown },
+    { name: "Таланты", href: "/dashboard/skills", icon: Axe },
+    { name: "Инвентарь", href: "/dashboard/inventory", icon: Backpack },
+    { name: "Подробная информация", href: "/dashboard/settings", icon: Settings },
 ];
 
 export default function DashboardNav() {

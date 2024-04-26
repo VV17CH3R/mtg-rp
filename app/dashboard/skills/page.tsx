@@ -63,7 +63,7 @@ import prisma from "../../lib/db";
               </CardHeader>
               <CardContent>
                 <div className="space-y-2">
-                    <div>
+                    <div className="mb-16">
                     {
                     data.map((el, indx) => ( 
                       <div className="flex mt-3 justify-between" key={indx}> 
@@ -76,7 +76,7 @@ import prisma from "../../lib/db";
                   }
                     </div>
   
-                  <div className="mt-12 space-y-1">
+                  <div className=" space-y-1">
                     <Label>Добавить талант</Label>
   
                     <div className="flex justify-center items-center">

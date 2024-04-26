@@ -96,13 +96,13 @@ export default async function SkillsPage() {
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                  <div>
+                  <div className=" mb-16">
                   {
                     data.map((el, indx) => ( 
                       <div className="flex mt-3 items-center justify-between" key={indx}> 
                         <div className="flex w-full justify-between">
                           <div className=" text-xl font-semibold text-primary">{el.name} </div>
-                          <div className="mr-3 text-3xl font-bold">{el.quant} </div>
+                          <div className="mr-8 text-3xl font-bold">{el.quant} </div>
                         </div> 
                         <RemoveItemBtn name2del={el.id as string}/> 
                       </div> 
@@ -110,10 +110,10 @@ export default async function SkillsPage() {
                   }
                   </div>
 
-                <div className=" mt-12 space-y-1">
+                <div className=" space-y-1">
                   <Label>Добавить предмет в инвернтарь</Label>
 
-                  <div className="flex justify-center items-center">
+                  <div className=" flex justify-center items-center">
                   <Input 
                     id="name" 
                     name="name" 

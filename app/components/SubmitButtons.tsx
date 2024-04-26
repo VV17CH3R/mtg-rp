@@ -77,7 +77,7 @@ export function RemoveItemBtn({name2del} : any) {
                     <Loader2 className="mr-2 w-4 h-4 animate-spin" />?
                 </Button>
             ) : (
-                <Button type="button" className="w-[50px]" onClick={() => removeItem(name2del as string)}>
+                <Button type="button" className=" rounded-full bg-red-600/50 text-xl   h-6 w-6 p-0 " onClick={() => removeItem(name2del as string)}>
                     X
                 </Button>
             )}
