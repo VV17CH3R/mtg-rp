@@ -102,19 +102,7 @@ export default async function SettingsPage() {
               </div>
               <div className="space-y-2">
                 <div className="space-y-1">
-                  <Label>Титул</Label>
-                  <Input 
-                    id="shortVision" 
-                    name="shortVision" 
-                    type="text" 
-                    defaultValue={data?.shortVision ?? ""}
-                    placeholder="Титул персонажа..."
-                  />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="space-y-1">
-                  <Label>Слухи о персонаже</Label>
+                  <Label>Известность {`(слухи о персонаже)`}</Label>
                   <Textarea
                     id="persDescription"
                     rows={5}
@@ -125,24 +113,12 @@ export default async function SettingsPage() {
               </div>
               <div className="space-y-2">
                 <div className="space-y-1">
-                  <Label>Внешний вид</Label>
+                  <Label>Статус {`(увечья/болезни/бафы/активные эффекты)`}</Label>
                   <Textarea
                     id="look"
                     rows={5}
                     name="look"
                     defaultValue={data?.look ?? ""}
-                  />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <div className="space-y-1">
-                  <Label>Верность</Label>
-                  <Textarea 
-                    id="loyality" 
-                    name="loyality" 
-                    rows={5}
-                    defaultValue={data?.loyality ?? ""}
-                    placeholder="Верность идеологии..."
                   />
                 </div>
               </div>
