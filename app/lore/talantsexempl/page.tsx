@@ -1,7 +1,7 @@
 
 export default async function TalantExPage() {
   
-    const data = [
+    const elArr = [
         {
             name: "Чистота Разума",
             descr: "(Больший Выбор Образов)"
@@ -49,19 +49,20 @@ export default async function TalantExPage() {
             name: "Повелитель (укажите тип существ)",
             descr: "(Время призыва сущест данного вида и вся связанная с ними магия усиленна)"
         },
-    ] 
+    ];
+
 
   return (
     <div className="">
       <div className="flex flex-col items-center justify-between">
               <div className="space-y-2">
                   <div className=" mb-16">
-                  {
-                    data.map((el, indx) => ( 
+                  { 
+                    elArr.map((el, indx) => ( 
                       <div className="flex mt-3 items-center justify-between" key={indx}> 
                         <div className="flex flex-col w-full items-center justify-between">
-                          <div className=" text-lg font-semibold text-primary">{el.name} </div>
-                          <div className=" max-w-[360px] text-center text-[10px]">{el.descr} </div>
+                          <div className=" text-lg font-semibold text-primary">{el?.name} </div>
+                          <div className=" max-w-[360px] text-center text-[10px]">{el?.descr} </div>
                         </div> 
                       </div> 
                     ))
