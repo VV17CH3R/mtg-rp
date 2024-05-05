@@ -41,7 +41,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(515px+70px)] p-3 bg-primary/30 left-[calc(465px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="bg-black/20 top-[calc(515px+70px)] p-3 left-[calc(465px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Замок Герцога</DialogTitle>
                 </DialogHeader>
@@ -54,7 +54,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(300px+70px)] p-3 bg-primary/30 left-[calc(490px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(300px+70px)] p-3 bg-black/20 left-[calc(490px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Школа</DialogTitle>
                 </DialogHeader>
@@ -67,7 +67,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(240px+70px)] p-3 bg-primary/30 left-[calc(550px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(240px+70px)] p-3 bg-black/20/30 left-[calc(550px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Конюшни</DialogTitle>
                 </DialogHeader>
@@ -80,7 +80,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(420px+70px)] p-3 bg-primary/30 left-[calc(705px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(420px+70px)] p-3 bg-black/20 left-[calc(705px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Кузнец</DialogTitle>
                 </DialogHeader>
@@ -94,7 +94,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(535px+70px)]  p-3 bg-primary/30 left-[calc(725px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(535px+70px)]  p-3 bg-black/20 left-[calc(725px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Университет</DialogTitle>
                 </DialogHeader>
@@ -107,7 +107,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(815px+70px)]  p-3 bg-primary/30 left-[calc(745px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(815px+70px)]  p-3 bg-black/20 left-[calc(745px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Верхний Рынок</DialogTitle>
                 </DialogHeader>
@@ -120,7 +120,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(875px+70px)]  p-3 bg-primary/30 left-[calc(645px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(875px+70px)]  p-3 bg-black/20 left-[calc(645px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Нижний Рынок</DialogTitle>
                 </DialogHeader>
@@ -133,7 +133,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(315px+70px)]  p-3 bg-primary/30 left-[calc(955px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(315px+70px)]  p-3 bg-black/20 left-[calc(955px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Больница</DialogTitle>
                 </DialogHeader>
@@ -146,7 +146,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(246px+70px)]  p-3 bg-primary/30 left-[calc(948px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(246px+70px)]  p-3 bg-black/20 left-[calc(948px+70px)] flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Церковь</DialogTitle>
                 </DialogHeader>
@@ -159,7 +159,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(417px+70px)] left-[calc(1323px+70px)]  p-3 bg-primary/30  flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+              <DialogContent  className="top-[calc(417px+70px)] left-[calc(1323px+70px)]  p-3 bg-black/20  flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Храм Всесоздателя</DialogTitle>
                 </DialogHeader>
