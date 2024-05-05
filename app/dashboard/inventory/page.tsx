@@ -46,7 +46,16 @@ export default async function SkillsPage() {
 
   const user = await getUser();
 
-  const gold = await getGold(user?.id as string)
+  const gold = await getGold(user?.id as string);
+
+  if(!gold) {
+    await prisma.gold.create({
+        data: {        
+            id: user?.id as string,
+            userId: user?.id as string,
+        },
+      });
+}
 
   const data = await getData(user?.id as string);
 

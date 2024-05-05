@@ -23,6 +23,7 @@ export const navPers = [
 
 export const navMain = [
   { name: "Ивент", href: "/events", icon: SignpostBig },
+  { name: "Карта мира", href: "/maps/nevender", icon: Map },
   { name: "Календарь", href: "/astrology", icon: Calendar },
 ];
 

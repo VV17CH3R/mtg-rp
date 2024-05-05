@@ -1,12 +1,13 @@
 
 import { cn } from "@/lib/utils";
-import { Backpack, Book, ScrollText } from "lucide-react";
+import { Axe, Backpack, Book, ScrollText } from "lucide-react";
 import Link from "next/link";
 
 const loreItems = [
   { name: "Артефакты", href: "/lore/all-arts", icon: Backpack },
   { name: "Заклинания", href: "/lore/all-spells", icon: ScrollText },
   { name: "Фирексия", href: "https://vk.com/@worlds_of_dominia-putevoditel-po-fireksii", icon: Book },
+  { name: "Примеры талантов", href: "/lore/talantsexempl", icon: Axe },
 ];
 
 export default function DashboardNav() {

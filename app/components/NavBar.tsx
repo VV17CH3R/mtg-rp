@@ -13,8 +13,8 @@ export async function NavBar() {
   const user = await getUser();
 
   return (
-    <nav className="bg-background border-b h-[10vh] flex items-center">
-      <div className="container md:px-[36px] flex items-center justify-between">
+    <nav className="bg-background w-full border-b h-[10vh] flex items-center">
+      <div className="container max-w-[3000px] flex items-center justify-between">
         <Link className="font-bold text-xl" href="/">
           <span className="text-primary text-3xl">MTG</span>RP
         </Link>
