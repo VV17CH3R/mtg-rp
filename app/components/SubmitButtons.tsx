@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { useFormStatus } from "react-dom";
 import removeItem from "./ServerFC";
+import { redirect } from "next/navigation"
 
 
 
@@ -84,3 +85,4 @@ export function RemoveItemBtn({name2del} : any) {
         </>
     )
 }
+

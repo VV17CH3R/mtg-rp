@@ -5,13 +5,13 @@ module.exports = {
       serverActions: true,
     },
     images: {
-        domains: ['res.cloudinary.com', "ncovgggrjiogvnverryj.supabase.co"],
+        domains: ['res.cloudinary.com', "ncovgggrjiogvnverryj.supabase.co", "mtgtrade.net"],
         remotePatterns: [
           {
             protocol: "https",
             hostname: 'mtgtrade.net',
           },
         ],
-      }
+      },
   }
   
