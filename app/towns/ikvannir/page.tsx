@@ -15,7 +15,7 @@ export default function IkvannirMapPage() {
     <main className="">
       <div className="w-[1532px] relative h-[1080px]">
         <Image
-          src="https://ncovgggrjiogvnverryj.supabase.co/storage/v1/object/public/content-for-sloweska/Ikvannir.jpg?t=2024-05-01T07%3A20%3A42.147Z"
+          src="https://ncovgggrjiogvnverryj.supabase.co/storage/v1/object/public/content-for-sloweska/Ikvannir%20(1).jpg?t=2024-05-22T02%3A41%3A40.366Z"
           width={1532}
           height={1080}
           alt="spb-main-map"
@@ -27,7 +27,7 @@ export default function IkvannirMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(590px+70px)] p-3 bg-primary/30 left-[calc(180px+70px)] flex flex-col justify-center items-start absolute w-[150px] h-[50px] ">
+              <DialogContent  className="top-[calc(590px+70px)] p-3 bg-black/20 left-[calc(180px+70px)] flex flex-col justify-center items-start absolute w-[150px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Порт</DialogTitle>
                 </DialogHeader>

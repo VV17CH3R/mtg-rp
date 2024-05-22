@@ -15,7 +15,7 @@ export default function BetrenburgMapPage() {
     <main className="">
       <div className="w-[564px] relative h-[705px]">
         <Image
-          src="https://ncovgggrjiogvnverryj.supabase.co/storage/v1/object/public/content-for-sloweska/betrenburg.jpg?t=2024-05-20T18%3A16%3A52.879Z"
+          src="https://ncovgggrjiogvnverryj.supabase.co/storage/v1/object/public/content-for-sloweska/betrenburg%20(1).jpg?t=2024-05-22T02%3A41%3A59.338Z"
           width={564}
           height={705}
           alt="spb-main-map"
@@ -27,7 +27,7 @@ export default function BetrenburgMapPage() {
 
             <Dialog>
               <DialogTrigger><MapPin size={20} className=" z-10 font-extrabold" /></DialogTrigger>
-              <DialogContent  className="top-[calc(590px+70px)] p-3 bg-primary/30 left-[calc(180px+70px)] flex flex-col justify-center items-start absolute w-[150px] h-[50px] ">
+              <DialogContent  className="top-[calc(590px+70px)] p-3 bg-black/20 left-[calc(180px+70px)] flex flex-col justify-center items-start absolute w-[150px] h-[50px] ">
                 <DialogHeader>
                   <DialogTitle className="text-[12px]">Порт</DialogTitle>
                 </DialogHeader>
