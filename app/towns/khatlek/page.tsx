@@ -145,6 +145,32 @@ export default function KhatLekMapPage() {
 
         </div>
 
+        <div className="top-[280px] left-[923px] flex items-center text-3xl font-extrabold justify-center absolute  text-black">
+
+            <Dialog>
+              <DialogTrigger><MapPin size={40} className=" z-10 text-black font-extrabold" /></DialogTrigger>
+              <DialogContent  className="top-[calc(280px+70px)] left-[calc(923px+70px)] p-3 bg-black/20  flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+                <DialogHeader>
+                  <DialogTitle className="text-[12px]"> {`Трактир "Слиток серебра"`}</DialogTitle>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+
+        </div>
+
+        <div className="top-[350px] left-[700px] flex items-center text-3xl font-extrabold justify-center absolute  text-black">
+
+            <Dialog>
+              <DialogTrigger><MapPin size={40} className=" z-10 text-black font-extrabold" /></DialogTrigger>
+              <DialogContent  className="top-[calc(350px+70px)] left-[calc(700px+70px)] p-3 bg-black/20  flex flex-col justify-center items-start absolute w-[200px] h-[50px] ">
+                <DialogHeader>
+                  <DialogTitle className="text-[12px]"> Завод Брона</DialogTitle>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
+
+        </div>
+
 
 
 
