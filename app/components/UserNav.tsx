@@ -40,11 +40,12 @@ export function UserNav({
     <nav className="h-full">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" className="relative rounded-full h-10 w-10">
-            <Avatar className="w-10 h-10 rounded-full">
+          <Button variant="ghost" className="relative bg-black/80 border border-gray-500 h-10 w-10 px-12">
+            Меню
+            {/* <Avatar className="w-10 h-10 rounded-full">
               <AvatarImage src={image} alt="avatar" />
               <AvatarFallback>VV17</AvatarFallback>
-            </Avatar>
+            </Avatar> */}
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56  h-full" align="end" forceMount>

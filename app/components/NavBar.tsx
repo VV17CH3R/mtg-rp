@@ -21,7 +21,7 @@ export async function NavBar() {
         <div className="flex ml-12 items-center gap-x-2 md:gap-x-5">
           <ThemeToggle  />
           {await isAuthenticated() ? (
-            <UserNav email={user?.email as string} name={user?.given_name as string} image={user?.picture as string} />
+            <UserNav email={user?.email as string} name={user?.given_name as string || "PW"} image={user?.picture as string || "https://ncovgggrjiogvnverryj.supabase.co/storage/v1/object/public/content-for-sloweska/0ecbc2d3-57c3-425e-9dae-4ff44c64af23.jfif"} />
           ) : (
             <div className="flex items-center gap-x-2">
             <LoginLink>
