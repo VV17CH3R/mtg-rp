@@ -125,3 +125,9 @@ model Gold {
   userId String
   quant String?
 }
+
+model adminEventPage {
+  id   String  @id @unique
+  imageUrl String?
+  eventName String?
+}

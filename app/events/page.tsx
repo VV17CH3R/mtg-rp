@@ -1,10 +1,11 @@
 
 import { cn } from "@/lib/utils";
-import { Axe, Backpack, Book, PocketKnife, ScrollText } from "lucide-react";
+import { Axe, Backpack, Book, PocketKnife, ScrollText, Crosshair } from "lucide-react";
 import Link from "next/link";
 
 const scenarioItems = [
   { name: "Беспредельщики пустошей", href: "/events/outlaws", icon: PocketKnife },
+  { name: "Текущий образ", href: "/events/curr", icon: Crosshair },
   
 ];
 
