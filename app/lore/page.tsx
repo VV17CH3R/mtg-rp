@@ -1,12 +1,13 @@
 
 import { cn } from "@/lib/utils";
-import { Axe, Backpack, Book, ScrollText } from "lucide-react";
+import { Axe, Backpack, Book, Leaf, ScrollText } from "lucide-react";
 import Link from "next/link";
 
 const loreItems = [
   { name: "Артефакты", href: "/lore/all-arts", icon: Backpack },
   { name: "Заклинания", href: "/lore/all-spells", icon: ScrollText },
   { name: "Фирексия", href: "https://vk.com/@worlds_of_dominia-putevoditel-po-fireksii", icon: Book },
+  { name: "Магический лес", href: "https://ehobby.ru/ru/blog/obzor-nabora-bloomburrow-125", icon: Leaf },
   { name: "Примеры талантов", href: "/lore/talantsexempl", icon: Axe },
 ];
 
