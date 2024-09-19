@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Castle, MapPin, Trees } from "lucide-react";
+import { Castle, MapPin, Skull, Trees } from "lucide-react";
 import Link from "next/link";
 import {
   Dialog,
@@ -55,6 +55,12 @@ export default function NevenderMapPage() {
         <div className="top-[805px] left-[425px] flex items-center text-3xl font-extrabold justify-center absolute  text-black">
           <Link href="/towns/betrenburg">
             <MapPin size={20} className=" z-10 font-extrabold" />
+          </Link>
+        </div>
+
+        <div className="top-[1355px] left-[1425px] flex items-center text-3xl font-extrabold justify-center absolute  text-black">
+          <Link href="/maps/phyrexia">
+            <Skull size={100} className=" z-10 font-extrabold" />
           </Link>
         </div>
       </div>

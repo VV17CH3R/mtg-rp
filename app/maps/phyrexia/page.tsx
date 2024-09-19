@@ -1,9 +1,11 @@
+import { Castle, Tent } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PhyrexiaMapPage() {
   return (
     <>
-      <div className="flex  justify-center h-[80vh]">
+      <div className="flex w-[1000px] justify-center h-[783px]">
         <div className="">
           <Image
             priority
@@ -11,9 +13,14 @@ export default function PhyrexiaMapPage() {
             alt="map"
             width={1000}
             height={783}
-            className="w-full top-0 left-0 absolute -z-10 h-[783px] object-cover object-center"
+            className="w-[1000px] top-0 left-0 absolute -z-10 h-[783px]  object-cover object-center"
           />
-          <div className="flex flex-col justify-center  ">
+          <div className="top-[280px] left-[215px] flex items-center text-3xl font-extrabold justify-center absolute  text-black">
+            <Link href="/towns/miran">
+              <Tent size={40} className=" z-10 font-extrabold" />
+            </Link>
+          </div>
+          <div className="flex flex-col justify-center mt-16 ">
             <div className="text-3xl font-extrabold mt-5 text-black bg-primary/50 px-2 text-center ">
               Монументальный Фасад
             </div>
