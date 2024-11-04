@@ -1,6 +1,6 @@
 
 import { cn } from "@/lib/utils";
-import { Axe, Backpack, Book, PocketKnife, ScrollText, Crosshair, Scale, Skull, SkullIcon, Radar, Leaf } from "lucide-react";
+import { Axe, Backpack, Book, PocketKnife, ScrollText, Crosshair, Scale, Skull, SkullIcon, Radar, Leaf, Building } from "lucide-react";
 import Link from "next/link";
 
 const scenarioItems = [
@@ -10,6 +10,7 @@ const scenarioItems = [
   { name: "Новая Фирексия", href: "/events/newphyrexia", icon: Skull},
   { name: "Старая Фиреския", href: "/events/oldphyrexia", icon: Radar },
   { name: "Волшебный лес", href: "/events/bloomb", icon: Leaf },
+  { name: "Особняк", href: "/events/duskmoon", icon: Building },
   
 ];
 
