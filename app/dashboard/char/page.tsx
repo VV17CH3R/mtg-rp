@@ -74,7 +74,7 @@ export default async function CharactPage() {
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
           <span className="font-bold">Тело</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(крепкость,`} <br /> {`плотность тела)`}
+            {`(физ. резист,`} <br /> {`маг. резист)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
@@ -86,7 +86,7 @@ export default async function CharactPage() {
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
           <span className="font-bold">Ум</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(рефлексы,`} <br /> {`мышление)`}
+            {`(скор. движ.,`} <br /> {`скор. каста)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
@@ -98,7 +98,7 @@ export default async function CharactPage() {
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
           <span className="font-bold">Харизма</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(красота тела,`} <br /> {`красота речи)`}
+            {`(соблазнить,`} <br /> {`убедить)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
@@ -110,7 +110,7 @@ export default async function CharactPage() {
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
           <span className="font-bold">Интеллект</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(практические знания,`} <br /> {`память энерго-потоков)`}
+            {`(практик,`} <br /> {`теоретик)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
@@ -122,7 +122,7 @@ export default async function CharactPage() {
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
           <span className="font-bold">Разум</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(Различение,`} <br /> {`Сила Воли)`}
+            {`(сила физ.,`} <br /> {`сила маг.)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
