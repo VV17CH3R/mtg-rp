@@ -39,7 +39,7 @@ export default async function Home() {
               
             </div>
             <p className="text-muted-foreground my-6">
-              Добро пожаловать дорогой друг в мир Magick The Gathering. <br />
+              Добро пожаловать, дорогой друг, в мир Magick The Gathering. <br />
               Игра, которой более 30 лет предлагает тебе приключение, в котором ты сможешь раскрыть потенциал своего воображения.
             </p>
           </div>
