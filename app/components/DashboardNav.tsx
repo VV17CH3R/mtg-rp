@@ -5,9 +5,8 @@ import Link from "next/link";
 export const navItems = [
     { name: "Визитка", href: "/dashboard", icon: Castle },
     { name: "Характеристики", href: "/dashboard/char", icon: Crown },
-    { name: "Таланты", href: "/dashboard/skills", icon: Axe },
     { name: "Инвентарь", href: "/dashboard/inventory", icon: Backpack },
-    { name: "Подробная информация", href: "/dashboard/settings", icon: Settings },
+    { name: "Редактировать", href: "/dashboard/settings", icon: Settings },
 ];
 
 export default function DashboardNav() {

@@ -16,15 +16,12 @@ import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 export const navPers = [
   { name: "Визитка", href: "/dashboard", icon: Castle },
   { name: "Характеристики", href: "/dashboard/char", icon: Crown },
-  { name: "Таланты", href: "/dashboard/skills", icon: Axe },
-  { name: "Инвентарь", href: "/dashboard/inventory", icon: Backpack },
-  { name: "Подробная информация", href: "/dashboard/settings", icon: Settings },
+  { name: "Инвентарь", href: "/dashboard/inventory", icon: Backpack }
 ];
 
 export const navMain = [
   { name: "Сюжет", href: "/events", icon: SignpostBig },
-  { name: "Карта мира", href: "/maps/nevender", icon: Map },
-  { name: "Календарь", href: "/astrology", icon: Calendar },
+  { name: "Карта мира", href: "/maps/nevender", icon: Map }
 ];
 
 export function UserNav({
@@ -76,7 +73,6 @@ export function UserNav({
             ))}
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
-          <DropdownMenuSeparator />
           <DropdownMenuGroup>
             {navPers.map((el, indx) => (
               <DropdownMenuItem asChild key={indx}>
@@ -92,6 +88,21 @@ export function UserNav({
               </DropdownMenuItem>
             ))}
           </DropdownMenuGroup>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem
+            className="w-full flex justify-between items-center"
+            asChild
+          >
+            <Link
+                  href="/dashboard/settings"
+                  className="w-full  flex justify-between items-center"
+                >
+                  Редактировать
+                  <span>
+                    <Settings/>
+                  </span>
+                </Link>
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem
             className="w-full flex justify-between items-center"
