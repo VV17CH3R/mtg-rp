@@ -1,4 +1,3 @@
-
 import { cn } from "@/lib/utils";
 import { Axe, Backpack, Book, Leaf, ScrollText } from "lucide-react";
 import Link from "next/link";
@@ -6,12 +5,12 @@ import Link from "next/link";
 const loreItems = [
 //   { name: "Артефакты", href: "/lore/all-arts", icon: Backpack },
 //   { name: "Заклинания", href: "/lore/all-spells", icon: ScrollText },
-  { name: "Правила", href: "/lore/rules", icon: Book },
+  { name: "Сын Сарамы", href: "/admin/quests/saramaputre", icon: Book },
 
 //   { name: "Примеры талантов", href: "/lore/talantsexempl", icon: Axe },
 ];
 
-export default function DashboardNav() {
+export default function QuestPg() {
     return (
         <div className="flex justify-center  items-center ">
             <nav className="grid mt-4 items-start gap-2">
