@@ -2,50 +2,55 @@ import { cn } from "@/lib/utils";
 import { Axe, Backpack, Book, Leaf, ScrollText } from "lucide-react";
 import Link from "next/link";
 
-export default function QuestPg() {
+export default function SaramaPutre() {
   return (
     <div className="flex items-center  justify-center">
       <div className="flex mt-4 justify-center flex-col w-auto items-center ">
-
-      <br></br><span className="font-extrabold text-primary text-xl"> Нага Маясома  fnd/640 </span>   
+        <text className="font-extrabold text-primary text-xl">
+          {
+            `
+            <br></br><span className="font-extrabold text-primary text-xl"> Нага Маясома  fnd/640 </span>   
       
-      <br></br><span className="font-extrabold text-primary text-xl"> царь Джанамеджая  ltc/52 </span>
+            <br></br><span className="font-extrabold text-primary text-xl"> царь Джанамеджая  ltc/52 </span>
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> Храм Триумфа Панду  mkc/306 </span>
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> Братья Джанамеджаи plist/ORI-130 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Сарама  mh3/22 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Сын Сарамы  mh21/2 </span>
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> Затопленная Роща  dsc/276 </span>
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> Недоразвитые  hbg/198 </span>
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> Минари Двуглавый  plist/CLB-225 </span>
+      
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> Шруташравас  j25/260 </span>
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> СомаШравас  fnd/649 </span>
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> Камней Душ  fnd/133 </span>
+      
+      
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> ТакшаШира  dsc/267 </span>
+      
+              <br></br><span className="font-extrabold text-primary text-xl"> Палладины  clu/55 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Големы Элит   rvr/7 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Ловцы   clu/64 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Башенный Патруль   j25/236 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Говорящие с серафимами   clu/79 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Ассасины   clu/123 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Молодая гвардия   clu/192 </span>
+              <br></br><span className="font-extrabold text-primary text-xl"> Духо-Воды   plis/RNA-16 </span>
+      
+      
+              <br></br><span className="font-extrabold text-primary text-xl">  Маршал Варис   j25/266 </span>
+              <br></br><span className="font-extrabold text-primary text-xl">  Дэви Левия  clu/199 </span>
+              </text>
 
-        <br></br><span className="font-extrabold text-primary text-xl"> Храм Триумфа Панду  mkc/306 </span>
-
-        <br></br><span className="font-extrabold text-primary text-xl"> Братья Джанамеджаи plist/ORI-130 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Сарама  mh3/22 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Сын Сарамы  mh21/2 </span>
-
-        <br></br><span className="font-extrabold text-primary text-xl"> Затопленная Роща  dsc/276 </span>
-
-        <br></br><span className="font-extrabold text-primary text-xl"> Недоразвитые  hbg/198 </span>
-
-        <br></br><span className="font-extrabold text-primary text-xl"> Минари Двуглавый  plist/CLB-225 </span>
-
-
-        <br></br><span className="font-extrabold text-primary text-xl"> Шруташравас  j25/260 </span>
-
-        <br></br><span className="font-extrabold text-primary text-xl"> СомаШравас  fnd/649 </span>
-
-        <br></br><span className="font-extrabold text-primary text-xl"> Камней Душ  fnd/133 </span>
-
-
-
-        <br></br><span className="font-extrabold text-primary text-xl"> ТакшаШира  dsc/267 </span>
-
-        <br></br><span className="font-extrabold text-primary text-xl"> Палладины  clu/55 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Големы Элит   rvr/7 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Ловцы   clu/64 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Башенный Патруль   j25/236 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Говорящие с серафимами   clu/79 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Ассасины   clu/123 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Молодая гвардия   clu/192 </span>
-        <br></br><span className="font-extrabold text-primary text-xl"> Духо-Воды   plis/RNA-16 </span>
-
-
-        <br></br><span className="font-extrabold text-primary text-xl">  Маршал Варис   j25/266 </span>
-        <br></br><span className="font-extrabold text-primary text-xl">  Дэви Левия  clu/199 </span>
+ 
          
             <br></br>
 
@@ -79,7 +84,9 @@ export default function QuestPg() {
         <br></br> При начале ягьи МаяСома Насылает на город чуму... Нужно спасит Город.
 
             </text>
-         
+            `
+          }
+        </text>
       </div>
     </div>
   );
