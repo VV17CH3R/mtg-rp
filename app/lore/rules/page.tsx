@@ -33,6 +33,7 @@ export default function RulesPg() {
         { text:"   Если игрок или несколько игроков не согластны с решением Пати Лидера, они могут бросить ему вызов в Междумирье за статус Пати Лидера. Те кто согластны с Пати Лидером сражаються за него.            "},
         { text:"   Каждый вызов на сражение Пати Лидера константно понижает его Лидерство на одну единицу.       "},
         { text:"   Выйти из Междумирья можно по знамению которые обязан озвучить ДМ. До озвучивания знамения выход из Лимба невозможен.     "},
+        { text:"   Три вдоха и Три выдоха – это один цикл. Каждые три цикла происходит усиление междумирья и является новый доминирующий образ и так же усиляються предидущие.      "},
 
     ]
 
@@ -41,7 +42,7 @@ export default function RulesPg() {
         <div className="flex justify-center  items-center ">
             <text className="mt-6">
                 {arr.map((el, indx) => (
-                    <div className="mx-6"><p key={indx}><span className="text-xl font-extrabold text-primary mr-3">{indx + 1}</span>{el.text}</p><br/></div>
+                    <div key={indx} className="mx-6"><p ><span className="text-xl font-extrabold text-primary mr-3">{indx + 1}</span>{el.text}</p><br/></div>
                 ))}
                 
             
