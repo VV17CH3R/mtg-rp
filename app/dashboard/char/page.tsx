@@ -60,21 +60,14 @@ export default async function CharactPage() {
                     name="look"
                     defaultValue={personage?.look ?? ""}
                   />
-      <div className="flex mt-5 justify-between">
-        
-        <div className="text-primary text-2xl font-semibold ml-5">
-          Физические
-        </div>
-        <div className="text-primary text-2xl font-semibold mr-5">Духовные</div>
-      </div>
       <div className="grid-cols-4 mt-8 gap-y-3 bg-white/10 p-3 rounded-md grid-rows-5 grid">
         <div className=" flex justify-center items-center text-4xl">
           {data?.PhysBody ?? "1"}
         </div>
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-          <span className="font-bold">Тело</span> <br />{" "}
+          <span className="font-bold">CON</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(физ. резист,`} <br /> {`маг. резист)`}
+            {`(крепкость`} <br /> {`нитей тела)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
@@ -84,9 +77,9 @@ export default async function CharactPage() {
           {data?.PhysMind ?? "1"}
         </div>
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-          <span className="font-bold">Ум</span> <br />{" "}
+          <span className="font-bold">MAN</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(скор. движ.,`} <br /> {`скор. каста)`}
+            {`(чувствительность,`} <br /> {`восприятие)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
@@ -96,9 +89,9 @@ export default async function CharactPage() {
           {data?.PhysKrasota ?? "1"}
         </div>
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-          <span className="font-bold">Харизма</span> <br />{" "}
+          <span className="font-bold">CHR</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(соблазнить,`} <br /> {`убедить)`}
+            {`(зачарование,`} <br /> {`красноречие)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
@@ -108,9 +101,9 @@ export default async function CharactPage() {
           {data?.PhysInt ?? "1"}
         </div>
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-          <span className="font-bold">Интеллект</span> <br />{" "}
+          <span className="font-bold">INT</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(практик,`} <br /> {`теоретик)`}
+            {`(mana-spell pool,`} <br /> {`память)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
@@ -120,9 +113,9 @@ export default async function CharactPage() {
           {data?.PhysRzum ?? "1"}
         </div>
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-          <span className="font-bold">Разум</span> <br />{" "}
+          <span className="font-bold">RAS</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(сила физ.,`} <br /> {`сила маг.)`}
+            {`(целеустремленность,`} <br /> {`сила магии)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
