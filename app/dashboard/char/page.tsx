@@ -91,7 +91,7 @@ export default async function CharactPage() {
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
           <span className="font-bold">CHR</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(зачарование,`} <br /> {`красноречие)`}
+            {`(очарование,`} <br /> {`удача)`}
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
