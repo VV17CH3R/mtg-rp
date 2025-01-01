@@ -15,7 +15,7 @@ export default async function Hero() {
                 className="w-full absolute top-[-100px] left-0 h-[90vh] object-cover -z-10 brightness-[60%]"
           />
           <h1 className="mb-4 text-4xl -z-10 lg:mt-0 font-bold text-center mt-5 lg:text-white/90 text-white sm:text-5xl md:mb-8 md:text-6xl">
-            Да зажжется <br /> твоя искра!
+            
           </h1>
         </div>
       </div>
