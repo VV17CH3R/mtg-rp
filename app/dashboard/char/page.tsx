@@ -124,10 +124,10 @@ export default async function CharactPage() {
       </div>
 
 
-      <div className="flex flex-col items-center mb-8 justify-between">
+      <div className="flex flex-col items-center mb-8 ">
 
-               <p className="text-primary text-2xl mx-3">Сила:  <span className="font-extrabold text-4xl ">{personage?.expirience}</span></p>
-               <p className="text-primary text-2xl mx-3"> Аура:  <span className="font-extrabold text-4xl ">{personage?.karma}</span> </p>
+               <p className="text-primary flex justify-between text-2xl mx-3">Сила:  <span className="font-extrabold ml-6 text-white text-4xl ">{personage?.expirience}</span></p>
+               <p className="text-primary flex justify-between text-2xl mx-3"> Аура:  <span className="font-extrabold ml-6 text-white text-4xl ">{personage?.karma}</span> </p>
 
 
       </div>
