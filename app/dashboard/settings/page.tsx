@@ -306,7 +306,7 @@ export default async function SettingsPage() {
               </div>
 
               <div className="flex mt-12 flex-col justify-center items-center" >
-                <p className="" >Карма: <Input
+                <p className="" >Аура: <Input
                   className=" mx-4 w-52 flex justify-center text-center items-center text-4xl"
                   id="karma"
                   name="karma"
@@ -315,7 +315,7 @@ export default async function SettingsPage() {
                 /></p> <br/>
                 
                 <br></br>
-                <p className=" ">Опыт: <Input
+                <p className=" ">Сила: <Input
                   className=" flex mx-4 w-52 justify-center text-center items-center text-4xl"
                   id="exp"
                   name="exp"

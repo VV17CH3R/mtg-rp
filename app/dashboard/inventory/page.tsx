@@ -141,7 +141,7 @@ export default async function SkillsPage() {
               </div>
             </CardContent>
             <CardFooter>
-                <div className=" flex w-full mr-3 items-center justify-between">Золото: <Input 
+                <div className=" flex w-full mx-3 items-center justify-between">Оры: <Input 
                       className="ml-8 w-[90px]"
                     id="gold" 
                     name="gold" 
