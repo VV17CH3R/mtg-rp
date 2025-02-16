@@ -71,7 +71,7 @@ export default async function CharactPage() {
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
-          {data?.PsyBody ?? " "}
+          x{data?.PsyBody ?? " "}
         </div>
         <div className=" flex justify-center items-center text-4xl">
           {data?.PhysMind ?? "1"}
@@ -83,7 +83,7 @@ export default async function CharactPage() {
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
-          {data?.PsyMind ?? " "}
+          x{data?.PsyMind ?? " "}
         </div>
         <div className=" flex justify-center items-center text-4xl">
           {data?.PhysKrasota ?? "1"}
@@ -95,7 +95,7 @@ export default async function CharactPage() {
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
-          {data?.PsyKrasota ?? " "}
+          x{data?.PsyKrasota ?? " "}
         </div>
         <div className=" flex justify-center items-center text-4xl">
           {data?.PhysInt ?? "1"}
@@ -107,7 +107,7 @@ export default async function CharactPage() {
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
-          {data?.PsyInt ?? " "}
+          x{data?.PsyInt ?? " "}
         </div>
         <div className=" flex justify-center items-center text-4xl">
           {data?.PhysRzum ?? "1"}
@@ -119,7 +119,7 @@ export default async function CharactPage() {
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">
-          {data?.PsyRazum ?? " "}
+          x{data?.PsyRazum ?? " "}
         </div>
       </div>
 
