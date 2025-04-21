@@ -153,7 +153,7 @@ export default async function SettingsPage() {
           persDescription ?? "Образ закутанный мешковидной тканью",
         shortVision: shortVision ?? "Незнакомец",
         look: look ?? "-",
-        loyality: loyality ?? "Неизвестные намеренья",
+        loyality: loyality ?? "0",
         karma: karma ?? "-",
         expirience: exp ?? "0"
       },
@@ -222,8 +222,8 @@ export default async function SettingsPage() {
                     <div>
                         <Input
                           className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
-                          id="karma"
-                          name="karma"
+                          id="PsyRazum"
+                          name="PsyRazum"
                           type="text"
                           defaultValue={data?.loyality ?? "0"}
                         />  
