@@ -81,7 +81,7 @@ export default async function DashboardLayout({
 
   return (
     <div className="flex flex-col">
-      <div className="container grid flex-1 ">
+      <div className="">
         <aside className="hidden w-[200px] flex-col md:flex">
           <DashboardNav />
         </aside>
