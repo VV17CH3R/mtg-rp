@@ -81,7 +81,7 @@ export default async function DashboardLayout({
 
   return (
     <div className="flex flex-col">
-      <div className="">
+      <div className="mt-2">
         <aside className="hidden w-[200px] flex-col md:flex">
           <DashboardNav />
         </aside>

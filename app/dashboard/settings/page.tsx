@@ -334,8 +334,8 @@ export default async function SettingsPage() {
 
          
 
-              <div className="space-y-1">
-                <Label>Цветовая схема профиля</Label>
+              <div className="mt-6 space-y-1">
+                <Label className="text-lg text-primary" >Цветовая схема профиля</Label>
                 <Select name="color" defaultValue={data?.colorSchema}>
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Выберите цвет"></SelectValue>

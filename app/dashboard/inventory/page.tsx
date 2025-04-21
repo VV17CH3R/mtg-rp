@@ -100,7 +100,7 @@ export default async function SkillsPage() {
         <Card className="w-full">
           <form action={postData}>
             <CardHeader>
-              <CardTitle className="text-center">Инвентарь</CardTitle>
+              <CardTitle className="text-center text-2xl text-primary">Инвентарь</CardTitle>
               {/* <CardDescription>Опишите своего персонажа</CardDescription> */}
             </CardHeader>
             <CardContent>
@@ -120,7 +120,7 @@ export default async function SkillsPage() {
                   </div>
 
                 <div className=" space-y-1">
-                  <Label>Добавить предмет в инвернтарь</Label>
+                  <Label className="text-xs text-primary-foreground">Добавить предмет в инвернтарь</Label>
 
                   <div className=" flex justify-center items-center">
                   <Input 
