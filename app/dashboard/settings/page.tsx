@@ -168,13 +168,13 @@ export default async function SettingsPage() {
         <Card className="w-full">
           <form action={postData}>
             <CardHeader>
-              <CardTitle className="text-center">Настройки</CardTitle>
+              <CardTitle className="text-center text-primary">Игровя карточка</CardTitle>
               {/* <CardDescription>Опишите своего персонажа</CardDescription> */}
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
                 <div className="space-y-1">
-                  <Label>Имя персонажа</Label>
+                  <Label>Имя сознания</Label>
                   <Input
                     id="name"
                     name="name"
@@ -184,9 +184,145 @@ export default async function SettingsPage() {
                   />
                 </div>
               </div>
-              <div className="space-y-2">
+
+
+              
+
+              <div className="mt-[-15px]">
+
+                <div className="flex my-6  justify-around items-center" >
+                    <div className=" w-44 text-2xl">Энергия: </div>
+                    <div>
+                        <Input
+                          className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
+                          id="expirience"
+                          name="expirience"
+                          type="text"
+                          defaultValue={ data?.expirience ?? "1"}
+                        />  
+                    </div>
+                </div> 
+
+
+                <div className="flex my-6  justify-around items-center" >
+                    <div className="w-44 text-2xl">Аура: </div>
+                    <div>
+                        <Input
+                          className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
+                          id="karma"
+                          name="karma"
+                          type="text"
+                          defaultValue={data?.karma ?? "1"}
+                        />  
+                    </div>
+                </div> 
+
+
+                <div className="text-lg text-center mt-6 font-bold text-primary">ХАРАКТЕРИСТИКИ </div>
+
+
+                <div className="flex mt-2  justify-around items-center" >
+                    <div className=" w-44 text-2xl">Тело </div>
+                    <div>
+                        <Input
+                          className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
+                          id="PhysBody"
+                          name="PhysBody"
+                          type="text"
+                          defaultValue={charOfPers?.PhysBody ?? "1"}
+                        />  
+                    </div>
+                </div> 
+                <div className=" flex flex-col text-center justify-center items-center">
+                    <span className="text-xs text-muted-foreground">
+                      {`(Умение сохранять/разрушать оболочки, эффективность существ и артефактов)`}
+                    </span>
+                </div>
+
+
+                <div className="flex mt-6  justify-around items-center" >
+                    <div className=" w-44 text-2xl">Ум </div>
+                    <div>
+                        <Input
+                          className="  mx-4 w-32 flex justify-center text-center items-center text-4xl"
+                          id="PhysMind"
+                          name="PhysMind"
+                          type="text"
+                          defaultValue={charOfPers?.PhysMind ?? "1"}
+                        />  
+                    </div>
+                </div> 
+                <div className=" flex flex-col text-center justify-center items-center">
+                    <span className="text-xs text-muted-foreground">
+                      {`(Восприятие, рефлексы, эффективность мгновенных заклинаний)`}
+                    </span>
+                </div>
+
+
+                <div className="flex mt-6  justify-around items-center" >
+                    <div className=" w-44 text-2xl">Чары</div>
+                    <div>
+                        <Input
+                          className="  mx-4 w-32 flex justify-center text-center items-center text-4xl"
+                          id="PhysKrasota"
+                          name="PhysKrasota"
+                          type="text"
+                          defaultValue={charOfPers?.PhysKrasota ?? "1"}
+                        />  
+                    </div>
+                </div> 
+                <div className=" flex flex-col text-center justify-center items-center">
+                    <span className="text-xs text-muted-foreground">
+                      {`(Убеждение, красота, харизма, эффективность чар)`}
+                    </span>
+                </div>
+
+
+
+                <div className="flex mt-6  justify-around items-center" >
+                    <div className="w-44 text-2xl">Интелект</div>
+                    <div>
+                        <Input
+                          className="  mx-4 w-32 flex justify-center text-center items-center text-4xl"
+                          id="PhysInt"
+                          name="PhysInt"
+                          type="text"
+                          defaultValue={charOfPers?.PhysInt ?? "1"}
+                        />  
+                    </div>
+                </div> 
+                <div className=" flex flex-col text-center justify-center items-center">
+                    <span className="text-xs text-muted-foreground">
+                      {`(Различение, знание, тактика, запас маны)`}
+                    </span>
+                </div>
+
+
+                <div className="flex mt-6  justify-around items-center" >
+                    <div className=" w-44 text-2xl">Воля</div>
+                    <div>
+                        <Input
+                          className="  mx-4 w-32 flex justify-center text-center items-center text-4xl"
+                          id="PhysRzum"
+                          name="PhysRzum"
+                          type="text"
+                          defaultValue={charOfPers?.PhysRzum ?? "1"}  
+                        />  
+                    </div>
+                </div> 
+                <div className=" flex flex-col text-center justify-center items-center">
+                    <span className="text-xs text-muted-foreground">
+                      {`(Эфективность волшебства, мощность заклинаний)`}
+                    </span>
+                </div>
+
+
+              </div>
+              
+
+              <div className="space-y-2 mt-12">
                 <div className="space-y-1">
-                  <Label>Заметки</Label>
+                  <Label className="text-xl text-primary">Заметки</Label>
                   <Textarea
                     id="look"
                     rows={16}
@@ -194,136 +330,6 @@ export default async function SettingsPage() {
                     defaultValue={data?.look ?? ""}
                   />
                 </div>
-              </div>
-
-              <div className="mt-[-15px]">
-                <div className="grid-cols-4 mt-8 gap-y-3 bg-white/10 p-3 rounded-md grid-rows-5 grid">
-                  <Input
-                    className=" flex justify-center text-center items-center text-4xl"
-                    id="PhysBody"
-                    name="PhysBody"
-                    type="text"
-                    defaultValue={charOfPers?.PhysBody ?? "1"}
-                  />
-
-                  <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-                    <span className="font-bold">Тело</span> <br />{" "}
-                    <span className="text-sm text-muted-foreground">
-                      {`(крепкость,`} <br /> {`плотность тела)`}
-                    </span>
-                  </div>
-
-                  <Input
-                    className=" flex justify-center text-center items-center text-4xl"
-                    id="PsyBody"
-                    name="PsyBody"
-                    type="text"
-                    defaultValue={charOfPers?.PsyBody ?? "1"}
-                  ></Input>
-
-                  <Input
-                    className=" flex justify-center items-center  text-center text-4xl"
-                    id="PhysMind"
-                    name="PhysMind"
-                    type="text"
-                    defaultValue={charOfPers?.PhysMind ?? "1"}
-                  ></Input>
-                  <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-                    <span className="font-bold">Ум</span> <br />{" "}
-                    <span className="text-sm text-muted-foreground">
-                      {`(рефлексы,`} <br /> {`мышление)`}
-                    </span>
-                  </div>
-                  <Input
-                    className=" flex justify-center text-center  items-center text-4xl"
-                    id="PsyMind"
-                    name="PsyMind"
-                    type="text"
-                    defaultValue={charOfPers?.PsyMind ?? "1"}
-                  ></Input>
-                  <Input
-                    className=" flex justify-center text-center items-center text-4xl"
-                    id="PhysKrasota"
-                    name="PhysKrasota"
-                    type="text"
-                    defaultValue={charOfPers?.PhysKrasota ?? "1"}
-                  ></Input>
-                  <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-                    <span className="font-bold">Харизма</span> <br />{" "}
-                    <span className="text-sm text-muted-foreground">
-                      {`(красота тела,`} <br /> {`красота речи)`}
-                    </span>
-                  </div>
-                  <Input
-                    className=" flex justify-center  text-center  items-center text-4xl"
-                    id="PsyKrasota"
-                    name="PsyKrasota"
-                    type="text"
-                    defaultValue={charOfPers?.PsyKrasota ?? "1"}
-                  ></Input>
-                  <Input
-                    className=" flex justify-center text-center items-center text-4xl"
-                    id="PhysInt"
-                    name="PhysInt"
-                    type="text"
-                    defaultValue={charOfPers?.PhysInt ?? "1"}
-                  ></Input>
-                  <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-                    <span className="font-bold">Интеллект</span> <br />{" "}
-                    <span className="text-sm text-muted-foreground">
-                      {`(практические знания,`} <br />{" "}
-                      {`память энерго-потоков)`}
-                    </span>
-                  </div>
-                  <Input
-                    className=" flex justify-center text-center items-center text-4xl"
-                    id="PsyInt"
-                    name="PsyInt"
-                    type="text"
-                    defaultValue={charOfPers?.PsyInt ?? "1"}
-                  ></Input>
-                  <Input
-                    className=" flex justify-center text-center items-center text-4xl"
-                    id="PhysRzum"
-                    name="PhysRzum"
-                    type="text"
-                    defaultValue={charOfPers?.PhysRzum ?? "1"}
-                  ></Input>
-                  <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
-                    <span className="font-bold">Разум</span> <br />{" "}
-                    <span className="text-sm text-muted-foreground">
-                      {`(Различение,`} <br /> {`Сила Воли)`}
-                    </span>
-                  </div>
-                  <Input
-                    className=" flex justify-center text-center items-center text-4xl"
-                    id="PsyRazum"
-                    name="PsyRazum"
-                    type="text"
-                    defaultValue={charOfPers?.PsyRazum ?? "1"}
-                  ></Input>
-                </div>
-              </div>
-
-              <div className="flex mt-12 flex-col justify-center items-center" >
-                <p className="" >Аура: <Input
-                  className=" mx-4 w-52 flex justify-center text-center items-center text-4xl"
-                  id="karma"
-                  name="karma"
-                  type="text"
-                  defaultValue={data?.karma ?? "1"}
-                /></p> <br/>
-                
-                <br></br>
-                <p className=" ">Сила: <Input
-                  className=" flex mx-4 w-52 justify-center text-center items-center text-4xl"
-                  id="exp"
-                  name="exp"
-                  type="text"
-                  defaultValue={ data?.expirience ?? "1"}
-                /></p> <br/>
-                
-
               </div>
 
          
