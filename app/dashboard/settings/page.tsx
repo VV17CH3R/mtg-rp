@@ -163,7 +163,7 @@ export default async function SettingsPage() {
   }
 
   return (
-    <div className="grid items-start gap-8">
+    <div className="grid items-start">
       <div className="flex flex-col items-center justify-between px-2">
         <Card className="w-full">
           <form action={postData}>
