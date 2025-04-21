@@ -195,8 +195,8 @@ export default async function SettingsPage() {
                     <div>
                         <Input
                           className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
-                          id="expirience"
-                          name="expirience"
+                          id="exp"
+                          name="exp"
                           type="text"
                           defaultValue={ data?.expirience ?? "1"}
                         />  
@@ -222,8 +222,8 @@ export default async function SettingsPage() {
                     <div>
                         <Input
                           className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
-                          id="PsyRazum"
-                          name="PsyRazum"
+                          id="loyality"
+                          name="loyality"
                           type="text"
                           defaultValue={data?.loyality ?? "0"}
                         />  
