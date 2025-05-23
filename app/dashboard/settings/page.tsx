@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { SubmitButton } from "@/app/components/SubmitButtons";
+import { MinusNRGbtn, PlusNRGbtn, SubmitButton } from "@/app/components/SubmitButtons";
 import { AddItemButton, RemoveItemBtn } from "@/app/components/SubmitButtons";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { revalidatePath } from "next/cache";
@@ -159,8 +159,12 @@ export default async function SettingsPage() {
       },
     });
 
+    
+
     revalidatePath("/", "layout");
-  }
+  };
+
+
 
   return (
     <div className="grid items-start">
@@ -192,7 +196,8 @@ export default async function SettingsPage() {
 
                 <div className="flex my-6  justify-around items-center" >
                     <div className=" w-44 text-2xl">Энергия: </div>
-                    <div>
+                    <div className="flex justify-between">
+                        {/* <PlusNRGbtn name2del={data?.expirience} userId={user?.id}/> */}
                         <Input
                           className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
                           id="exp"
@@ -200,8 +205,24 @@ export default async function SettingsPage() {
                           type="text"
                           defaultValue={ data?.expirience ?? "1"}
                         />  
+                        {/* <MinusNRGbtn name2del={data?.expirience} userId={user?.id}></MinusNRGbtn> */}
                     </div>
                 </div> 
+
+                <SubmitButton />
+
+
+                <div className="space-y-2 mt-12">
+                <div className="space-y-1">
+                  <Label className="text-xl text-primary">Заметки</Label>
+                  <Textarea
+                    id="look"
+                    rows={16}
+                    name="look"
+                    defaultValue={data?.look ?? ""}
+                  />
+                </div>
+              </div>
 
 
                 <div className="flex my-6  justify-around items-center" >
@@ -325,7 +346,7 @@ export default async function SettingsPage() {
                 </div> 
                 <div className=" flex flex-col text-center justify-center items-center">
                     <span className="text-xs text-muted-foreground">
-                      {`(Эфективность волшебства, мощность заклинаний)`}
+                      {`(Эфективность волшебства, перезарядка заклинаний)`}
                     </span>
                 </div>
 
@@ -333,17 +354,7 @@ export default async function SettingsPage() {
               </div>
               
 
-              <div className="space-y-2 mt-12">
-                <div className="space-y-1">
-                  <Label className="text-xl text-primary">Заметки</Label>
-                  <Textarea
-                    id="look"
-                    rows={16}
-                    name="look"
-                    defaultValue={data?.look ?? ""}
-                  />
-                </div>
-              </div>
+              
 
          
 

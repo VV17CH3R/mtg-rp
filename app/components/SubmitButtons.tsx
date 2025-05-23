@@ -3,8 +3,10 @@
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { useFormStatus } from "react-dom";
-import removeItem from "./ServerFC";
-import { redirect } from "next/navigation"
+import removeItem, { minNRG, plusNRG } from "./ServerFC";
+import { redirect } from "next/navigation";
+
+
 
 
 
@@ -58,6 +60,49 @@ export function StripeSubButton() {
             ) : (
                 <Button type="submit" className="w-full">
                     Подписаться 
+                </Button>
+            )}
+        </>
+    )
+};
+
+
+export async function PlusNRGbtn({name2del, userId} : any) {
+
+
+    const { pending } = useFormStatus();
+
+    return (
+        <>
+            {pending ? (
+                <Button disabled  className="m-auto w-[50px]" >
+                    <Loader2 className="mr-2 w-4 h-4 animate-spin" />?
+                </Button>
+            ) : (
+                <Button type="button" className=" rounded-full    h-6 w-6 p-0 " onClick={() => plusNRG(name2del as string, userId as string)}>
+                    +
+                </Button>
+            )}
+        </>
+    )
+};
+
+export async function MinusNRGbtn({name2del, userId} : any) {
+
+
+
+
+    const { pending } = useFormStatus();
+
+    return (
+        <>
+            {pending ? (
+                <Button disabled  className="m-auto w-[50px]" >
+                    <Loader2 className="mr-2 w-4 h-4 animate-spin" />?
+                </Button>
+            ) : (
+                <Button type="button" className=" rounded-full    h-6 w-6 p-0 " onClick={() => minNRG(name2del as string, userId as string)}>
+                    -
                 </Button>
             )}
         </>
