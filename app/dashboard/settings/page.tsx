@@ -178,7 +178,7 @@ export default async function SettingsPage() {
             <CardContent>
               <div className="space-y-2">
                 <div className="space-y-1">
-                  <Label>Имя сознания</Label>
+                  <Label>Имя персонажа</Label>
                   <Input
                     id="name"
                     name="name"
