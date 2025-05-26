@@ -269,7 +269,7 @@ export default async function SettingsPage() {
                 </div> 
                 <div className=" flex flex-col text-center justify-center items-center">
                     <span className="text-xs text-muted-foreground">
-                      {`(Умение сохранять/разрушать оболочки, эффективность существ и артефактов)`}
+                      {`(Броня +3, Сила +3, эффективность артефактов)`}
                     </span>
                 </div>
 
@@ -288,7 +288,7 @@ export default async function SettingsPage() {
                 </div> 
                 <div className=" flex flex-col text-center justify-center items-center">
                     <span className="text-xs text-muted-foreground">
-                      {`(Восприятие, рефлексы, эффективность мгновенных заклинаний)`}
+                      {`(Восприятие +3, Ловкость +3, эффективность мгновенных заклинаний)`}
                     </span>
                 </div>
 
@@ -307,7 +307,7 @@ export default async function SettingsPage() {
                 </div> 
                 <div className=" flex flex-col text-center justify-center items-center">
                     <span className="text-xs text-muted-foreground">
-                      {`(Убеждение, красота, харизма, эффективность чар)`}
+                      {`(Убеждение +3, эффективность чар)`}
                     </span>
                 </div>
 
@@ -327,7 +327,7 @@ export default async function SettingsPage() {
                 </div> 
                 <div className=" flex flex-col text-center justify-center items-center">
                     <span className="text-xs text-muted-foreground">
-                      {`(Различение, знание, тактика, запас маны)`}
+                      {`(Запас маны, +3 Знание, кол-во заклинаний)`}
                     </span>
                 </div>
 
@@ -346,7 +346,7 @@ export default async function SettingsPage() {
                 </div> 
                 <div className=" flex flex-col text-center justify-center items-center">
                     <span className="text-xs text-muted-foreground">
-                      {`(Эфективность волшебства, перезарядка заклинаний)`}
+                      {`(Эфективность волшебства, Ментальная устойчивость +3)`}
                     </span>
                 </div>
 
