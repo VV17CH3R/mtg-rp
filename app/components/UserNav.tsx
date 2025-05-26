@@ -21,7 +21,7 @@ export const navPers = [
 
 export const navMain = [
   { name: "Сюжет", href: "/events", icon: SignpostBig },
-  { name: "Карта мира", href: "/maps/nevender", icon: Map }
+  { name: "Карта мира", href: "/maps/zaraloka", icon: Map }
 ];
 
 export function UserNav({
