@@ -225,7 +225,7 @@ export default async function SettingsPage() {
                   </div>
                 </div>
 
-                <div className="flex mx-6 mt-[-40px] justify-around">
+                <div className="flex mx-6 mt-[-40px] justify-between">
 
                 <div className={styles.d22}>
                     <Input
@@ -265,7 +265,7 @@ export default async function SettingsPage() {
                   <SubmitButton />
                 </div>
 
-                <div className="space-y-2 mt-12">
+                <div className="space-y-2 mt-2">
                   <div className="space-y-1">
                     <Label className="text-xl text-primary">Заметки</Label>
                     <Textarea
