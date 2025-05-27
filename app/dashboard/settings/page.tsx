@@ -176,47 +176,103 @@ export default async function SettingsPage() {
             <CardContent>
               <div className="mt-[15px]">
                 <div className="flex justify-between">
+                  <div className={styles.d18}>
+                    <Input
+                      className=" mx-[33px] border border-s-rose-500 font-extrabold my-3 border-none bg-inherit w-16 flex absolute z-50 justify-center text-center items-center text-4xl"
+                      id="hp"
+                      name="hp"
+                      type="text"
+                      defaultValue={charOfPers?.PsyBody ?? "1"}
+                    />
+                  </div>
 
-                    <div className={styles.d18}>
-                      <Input
-                        className=" mx-[33px] border border-s-rose-500 font-extrabold my-3 border-none bg-inherit w-16 flex absolute z-50 justify-center text-center items-center text-4xl"
-                        id="hp"
-                        name="hp"
-                        type="text"
-                        defaultValue={charOfPers?.PsyBody ?? "1"}
-                      />
+                  <div className="flex flex-col">
+                    <div className="">
+                      <div className="space-y-1 ">
+                        {/* <Label>Имя персонажа</Label> */}
+                        <Input
+                          id="name"
+                          name="name"
+                          type="text"
+                          defaultValue={data?.name ?? user?.given_name ?? ""}
+                          placeholder="Имя персонажа..."
+                          className="font-semibold text-xl text-primary w-44"
+                        />
+                      </div>
                     </div>
+                    <div className="mt-3">
+                      <div className="space-y-1 ml-[-36px] ">
+                        {/* <Label>Имя персонажа</Label> */}
+                        <Input
+                          id="look"
+                          name="look"
+                          type="text"
+                          defaultValue={data?.look ?? user?.given_name ?? ""}
+                          placeholder="Имя персонажа..."
+                        />
+                      </div>
+                    </div>
+                  </div>
 
+                  <div className={styles.d16}>
+                    <Input
+                      className=" mx-[14px] my-1 border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-4xl"
+                      id="exp"
+                      name="exp"
+                      type="text"
+                      defaultValue={data?.expirience ?? "1"}
+                    />
+                  </div>
+                </div>
 
+                <div className="flex mx-24 justify-between">
+
+                <div className={styles.d22}>
+                    <Input
+                      className=" ml-[-14px] mt-[-24px] border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-4xl"
+                      id="eda"
+                      name="eda"
+                      type="text"
+                      defaultValue={charOfPers?.PsyRazum ?? "1"}
+                    />
+                  </div>
+
+                  <div className={styles.d40}>
+                    <Input
+                      className="  ml-[-22px] mt-[-20px] border-none font-bold bg-inherit w-[48px] flex absolute z-50 justify-center text-center items-center text-2xl"
+                      id="temp"
+                      name="temp"
+                      type="text"
+                      defaultValue={charOfPers?.PsyKrasota ?? "1"}
+                    />
+                  </div>
+
+                  <div className={styles.d26}>
+                    <Input
+                      className=" mt-[24px] ml-[36px] font-bold border-none bg-inherit w-[42px] flex absolute z-50 justify-center text-center items-center text-4xl"
+                      id="sleep"
+                      name="sleep"
+                      type="text"
+                      defaultValue={charOfPers?.PsyMind ?? "1"}
+                    />
+                  </div>
 
                   
 
-
-                    <div className={styles.d16}>
-                      <Input
-                        className=" mx-[14px] my-1 border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-4xl"
-                        id="exp"
-                        name="exp"
-                        type="text"
-                        defaultValue={data?.expirience ?? "1"}
-                      />
-                    </div>
-
                 </div>
 
-                <div className="flex justify-center align-middle">
-                <SubmitButton />
+                <div className="flex justify-center mt-14 align-middle">
+                  <SubmitButton />
                 </div>
-               
 
                 <div className="space-y-2 mt-12">
                   <div className="space-y-1">
                     <Label className="text-xl text-primary">Заметки</Label>
                     <Textarea
-                      id="look"
+                      id="persDescription"
                       rows={16}
-                      name="look"
-                      defaultValue={data?.look ?? ""}
+                      name="persDescription"
+                      defaultValue={data?.persDescription ?? ""}
                     />
                   </div>
                 </div>

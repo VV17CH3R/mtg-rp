@@ -84,3 +84,38 @@
             border-left: 50px solid transparent;
             transform: rotate(-70deg);
             }
+
+
+            .d40 {
+                width: 0; 
+                height: 0;
+                background: rgb(119, 217, 250);
+                border-radius: 50%;
+                border-style: solid;
+                border-width: 50px;
+                border-top-color: rgb(238, 45, 23);
+                border-right-color: transparent;
+                border-bottom-color: rgb(252, 58, 37);
+                border-left-color: transparent;
+                }
+
+                .d26 {
+                    width: 100px; 
+                    height: 100px; 
+                    margin: -20px 0 20px 0;
+                    border-radius: 50%;
+                    box-shadow: 15px 15px 0 0 #FEC712;
+                    }
+
+                    .d22 {
+                        width: 0; 
+                        height: 0;
+                        border-right: 40px solid transparent;
+                        border-top: 40px solid #F4B915;
+                        border-left: 40px solid #F4B915;
+                        border-bottom: 40px solid #F4B915;
+                        border-top-left-radius: 40px;
+                        border-top-right-radius: 40px;
+                        border-bottom-left-radius: 40px;
+                        border-bottom-right-radius: 40px;
+                        }
