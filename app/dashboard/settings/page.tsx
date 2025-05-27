@@ -225,7 +225,7 @@ export default async function SettingsPage() {
                   </div>
                 </div>
 
-                <div className="flex mx-24 justify-between">
+                <div className="flex mx-6 mt-[-40px] justify-around">
 
                 <div className={styles.d22}>
                     <Input
@@ -233,27 +233,27 @@ export default async function SettingsPage() {
                       id="eda"
                       name="eda"
                       type="text"
-                      defaultValue={charOfPers?.PsyRazum ?? "1"}
+                      defaultValue={charOfPers?.PsyRazum ?? "0"}
                     />
                   </div>
 
                   <div className={styles.d40}>
                     <Input
-                      className="  ml-[-22px] mt-[-20px] border-none font-bold bg-inherit w-[48px] flex absolute z-50 justify-center text-center items-center text-2xl"
+                      className="  ml-[-42px] mt-[-20px] border-none font-bold bg-inherit w-[78px] flex absolute z-50 justify-center text-center items-center text-[24px]"
                       id="temp"
                       name="temp"
                       type="text"
-                      defaultValue={charOfPers?.PsyKrasota ?? "1"}
+                      defaultValue={charOfPers?.PsyKrasota ?? "36.6"}
                     />
                   </div>
 
                   <div className={styles.d26}>
                     <Input
-                      className=" mt-[24px] ml-[36px] font-bold border-none bg-inherit w-[42px] flex absolute z-50 justify-center text-center items-center text-4xl"
+                      className=" mt-[34px] ml-[36px] border-none bg-inherit w-[42px] flex absolute z-50 justify-center text-center items-center text-4xl"
                       id="sleep"
                       name="sleep"
                       type="text"
-                      defaultValue={charOfPers?.PsyMind ?? "1"}
+                      defaultValue={charOfPers?.PsyMind ?? "0"}
                     />
                   </div>
 
@@ -261,7 +261,7 @@ export default async function SettingsPage() {
 
                 </div>
 
-                <div className="flex justify-center mt-14 align-middle">
+                <div className="flex justify-center mt-6 align-middle">
                   <SubmitButton />
                 </div>
 
