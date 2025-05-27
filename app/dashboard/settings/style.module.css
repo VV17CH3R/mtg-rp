@@ -1,0 +1,86 @@
+.d18 {
+    position: relative;
+    width: 150px; 
+    height: 160px;
+    z-index: 10;
+    }
+    .d18:before, 
+    .d18:after {
+    content: "";
+    position: absolute; 
+    left: 66px; 
+    top: 0;
+    width: 66px; 
+    height: 90px;
+    background: #EE4156;
+    border-radius: 66px 66px 0 0;
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%;
+    
+    
+    }
+    .d18:after {
+    left: 0;
+    transform: rotate(45deg); 
+    transform-origin: 100% 100%;
+    }
+
+    .d16 {
+        margin: 20px 0; 
+        width: 100px; 
+        height: 55px;
+        background: #ffa149;
+        position: relative;
+        }
+        .d16:before, 
+        .d16:after {
+        content: "";
+        width: 0; 
+        height: 0;
+        position: absolute; 
+        left: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        }
+        .d16:before {
+        top: -25px;
+        border-bottom: 25px solid #ffa149;
+        }
+        .d16:after {
+        bottom: -25px;
+        border-top: 25px solid #ffa149;
+        }
+
+        .d14 {
+            margin: 50px 0; 
+            height: 0; 
+            width: 0;
+            position: relative;
+            border-right: 50px solid transparent;
+            border-bottom: 35px solid #E7337A;
+            border-left: 50px solid transparent;
+            transform: rotate(35deg);
+            }
+            .d14:before, 
+            .d14:after {
+            content: "";
+            height: 0; 
+            width: 0;
+            position: absolute;
+            }
+            .d14:before {
+            top: -26px; 
+            left: -32px;
+            border-bottom: 40px solid #E7337A;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            transform: rotate(-35deg);
+            }
+            .d14:after {
+            top: 2px; 
+            left: -53px;
+            border-right: 50px solid transparent;
+            border-bottom: 35px solid #E7337A;
+            border-left: 50px solid transparent;
+            transform: rotate(-70deg);
+            }

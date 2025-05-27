@@ -67,7 +67,7 @@ export default async function CharactPage() {
         <div className=" flex flex-col text-center px- justify-center items-center col-span-2">
           <span className="font-bold">CON</span> <br />{" "}
           <span className="text-sm text-muted-foreground">
-            {`(Броня +3, Сила +3, эффективность артефактов`} 
+            {`(Броня +3, Сила +3, эффективность артефактов)`} 
           </span>
         </div>
         <div className=" flex justify-center items-center text-4xl">

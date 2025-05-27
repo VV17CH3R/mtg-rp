@@ -542,6 +542,30 @@
   --ring: 263.4 70% 50.4%;
 }
 
+.d18 {
+  position: relative;
+  width: 100px; 
+  height: 80px;
+  }
+  .d18:before, 
+  .d18:after {
+  content: "";
+  position: absolute; 
+  left: 50px; 
+  top: 0;
+  width: 50px; 
+  height: 80px;
+  background: #EE4156;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%;
+  }
+  .d18:after {
+  left: 0;
+  transform: rotate(45deg); 
+  transform-origin: 100% 100%;
+  }
+
  
 @layer base {
   * {
