@@ -186,8 +186,9 @@ export default async function SettingsPage() {
                     />
                   </div>
 
+
                   <div className="flex flex-col">
-                    <div className="">
+                  <div className="">
                       <div className="space-y-1 ">
                         {/* <Label>Имя персонажа</Label> */}
                         <Input
@@ -195,24 +196,29 @@ export default async function SettingsPage() {
                           name="name"
                           type="text"
                           defaultValue={data?.name ?? user?.given_name ?? ""}
-                          placeholder="Имя персонажа..."
-                          className="font-semibold text-xl text-primary w-44"
+                          placeholder="Имя..."
+                          className="ml-[-40px] font-semibold text-center border-none text-xl text-primary w-44"
                         />
                       </div>
                     </div>
-                    <div className="mt-3">
-                      <div className="space-y-1 ml-[-36px] ">
+                    
+                    <div className="mt-1">
+                      <div className="space-y-1  ">
                         {/* <Label>Имя персонажа</Label> */}
                         <Input
                           id="look"
                           name="look"
                           type="text"
                           defaultValue={data?.look ?? user?.given_name ?? ""}
-                          placeholder="Имя персонажа..."
+                          placeholder="Титул..."
+                          className="ml-[-40px] text-center border-none text-[12px] w-44"
                         />
                       </div>
                     </div>
                   </div>
+                  
+
+                  
 
                   <div className={styles.d16}>
                     <Input
@@ -225,9 +231,9 @@ export default async function SettingsPage() {
                   </div>
                 </div>
 
-                <div className="flex mx-6 mt-[-40px] justify-between">
 
-                <div className={styles.d22}>
+
+                {/* <div className={styles.d22}>
                     <Input
                       className=" ml-[-14px] mt-[-24px] border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-2xl"
                       id="eda"
@@ -246,13 +252,15 @@ export default async function SettingsPage() {
                       type="text"
                       defaultValue={charOfPers?.PsyMind ?? "0"}
                     />
-                  </div>
+                  </div> */}
 
                   
 
-                </div>
 
-                <div className="flex justify-center mt-6 align-middle">
+
+                
+
+                <div className="flex justify-center mt-[-36px] align-middle">
                   <SubmitButton />
                 </div>
 
