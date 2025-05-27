@@ -216,7 +216,7 @@ export default async function SettingsPage() {
 
                   <div className={styles.d16}>
                     <Input
-                      className=" mx-[14px] my-1 border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-4xl"
+                      className=" mx-[14px] my-1 border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-xl"
                       id="exp"
                       name="exp"
                       type="text"
@@ -229,7 +229,7 @@ export default async function SettingsPage() {
 
                 <div className={styles.d22}>
                     <Input
-                      className=" ml-[-14px] mt-[-24px] border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-4xl"
+                      className=" ml-[-14px] mt-[-24px] border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-2xl"
                       id="eda"
                       name="eda"
                       type="text"
@@ -237,19 +237,10 @@ export default async function SettingsPage() {
                     />
                   </div>
 
-                  <div className={styles.d40}>
-                    <Input
-                      className="  ml-[-42px] mt-[-20px] border-none font-bold bg-inherit w-[78px] flex absolute z-50 justify-center text-center items-center text-[24px]"
-                      id="temp"
-                      name="temp"
-                      type="text"
-                      defaultValue={charOfPers?.PsyKrasota ?? "36.6"}
-                    />
-                  </div>
 
                   <div className={styles.d26}>
                     <Input
-                      className=" mt-[34px] ml-[36px] border-none bg-inherit w-[42px] flex absolute z-50 justify-center text-center items-center text-4xl"
+                      className=" mt-[34px] ml-[36px] border-none bg-inherit w-[42px] flex absolute z-50 justify-center text-center items-center text-2xl"
                       id="sleep"
                       name="sleep"
                       type="text"
