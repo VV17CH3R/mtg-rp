@@ -176,9 +176,9 @@ export default async function SettingsPage() {
             <CardContent>
               <div className="mt-[15px]">
                 <div className="flex justify-between">
-                  <div className={styles.d18}>
+                  <div >HP:
                     <Input
-                      className=" mx-[33px] border border-s-rose-500 font-extrabold my-3 border-none bg-inherit w-16 flex absolute z-50 justify-center text-center items-center text-4xl"
+                      className="  w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="hp"
                       name="hp"
                       type="text"
@@ -187,10 +187,97 @@ export default async function SettingsPage() {
                   </div>
 
 
+
+                    <div > AS:
+                    <Input
+                      className="w-[72px] z-50 justify-center text-center items-center text-xl"
+                      id="karma"
+                      name="karma"
+                      type="text"
+                      defaultValue={data?.karma ?? "1"}
+                    />
+                  </div>
+                  
+
+                  
+
+                  <div > NRG:
+                    <Input
+                      className="w-[72px] z-50 justify-center text-center items-center text-xl"
+                      id="exp"
+                      name="exp"
+                      type="text"
+                      defaultValue={data?.expirience ?? "1"}
+                    />
+                  </div>
+                </div>
+
+
+                <div className="flex justify-between">
+                  <div >ARM:
+                    <Input
+                      className="  w-[72px] z-50 justify-center text-center items-center text-xl"
+                      id="hp"
+                      name="hp"
+                      type="text"
+                      defaultValue={charOfPers?.PsyKrasota ?? "1"}
+                    />
+                  </div>
+
+
+
+                    <div > AGI:
+                    <Input
+                      className="w-[72px] z-50 justify-center text-center items-center text-xl"
+                      id="eda"
+                      name="eda"
+                      type="text"
+                      defaultValue={charOfPers?.PsyRazum ?? "0"}
+                    />
+                  </div>
+                  
+
+                  
+
+                  <div > FAT:
+                    <Input
+                      className="w-[72px] z-50 justify-center text-center items-center text-xl"
+                      id="sleep"
+                      name="sleep"
+                      type="text"
+                      defaultValue={charOfPers?.PsyMind ?? "0"}
+                    />
+                  </div>
+                </div>
+
+
+
+                {/* <div >
+                    <Input
+                      className=" ml-[-14px] mt-[-24px] border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-2xl"
+                      id="eda"
+                      name="eda"
+                      type="text"
+                      defaultValue={charOfPers?.PsyRazum ?? "0"}
+                    />
+                  </div>
+
+
+                  <div >
+                    <Input
+                      className=" mt-[34px] ml-[36px] border-none bg-inherit w-[42px] flex absolute z-50 justify-center text-center items-center text-2xl"
+                      id="sleep"
+                      name="sleep"
+                      type="text"
+                      defaultValue={charOfPers?.PsyMind ?? "0"}
+                    />
+                  </div> */}
+
+                  {/* 
                   <div className="flex flex-col">
                   <div className="">
                       <div className="space-y-1 ">
-                        {/* <Label>Имя персонажа</Label> */}
+                       
                         <Input
                           id="name"
                           name="name"
@@ -204,7 +291,7 @@ export default async function SettingsPage() {
                     
                     <div className="mt-1">
                       <div className="space-y-1  ">
-                        {/* <Label>Имя персонажа</Label> */}
+                        
                         <Input
                           id="look"
                           name="look"
@@ -215,43 +302,6 @@ export default async function SettingsPage() {
                         />
                       </div>
                     </div>
-                  </div>
-                  
-
-                  
-
-                  <div className={styles.d16}>
-                    <Input
-                      className=" mx-[14px] my-1 border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-xl"
-                      id="exp"
-                      name="exp"
-                      type="text"
-                      defaultValue={data?.expirience ?? "1"}
-                    />
-                  </div>
-                </div>
-
-
-
-                {/* <div className={styles.d22}>
-                    <Input
-                      className=" ml-[-14px] mt-[-24px] border-none bg-inherit w-[72px] flex absolute z-50 justify-center text-center items-center text-2xl"
-                      id="eda"
-                      name="eda"
-                      type="text"
-                      defaultValue={charOfPers?.PsyRazum ?? "0"}
-                    />
-                  </div>
-
-
-                  <div className={styles.d26}>
-                    <Input
-                      className=" mt-[34px] ml-[36px] border-none bg-inherit w-[42px] flex absolute z-50 justify-center text-center items-center text-2xl"
-                      id="sleep"
-                      name="sleep"
-                      type="text"
-                      defaultValue={charOfPers?.PsyMind ?? "0"}
-                    />
                   </div> */}
 
                   
@@ -260,7 +310,7 @@ export default async function SettingsPage() {
 
                 
 
-                <div className="flex justify-center mt-[-36px] align-middle">
+                <div className="flex justify-center mt-10 align-middle">
                   <SubmitButton />
                 </div>
 
@@ -289,7 +339,7 @@ export default async function SettingsPage() {
                   </div>
                 </div>
 
-                <div className="flex my-6  justify-around items-center">
+                {/* <div className="flex my-6  justify-around items-center">
                   <div className="w-44 text-2xl">Вес мира: </div>
                   <div>
                     <Input
@@ -300,11 +350,11 @@ export default async function SettingsPage() {
                       defaultValue={data?.loyality ?? "0"}
                     />
                   </div>
-                </div>
+                </div> */}
 
                 <div className="space-y-2">
                   <div className="space-y-1">
-                    <Label>Имя персонажа</Label>
+                    <Label>Имя</Label>
                     <Input
                       id="name"
                       name="name"
@@ -405,7 +455,7 @@ export default async function SettingsPage() {
                 </div>
                 <div className=" flex flex-col text-center justify-center items-center">
                   <span className="text-xs text-muted-foreground">
-                    {`(Эфективность волшебства, Ментальная устойчивость +3)`}
+                    {`(Эфективность волшебства, Макс. запас энергии, Ментальная устойчивость +3)`}
                   </span>
                 </div>
               </div>
