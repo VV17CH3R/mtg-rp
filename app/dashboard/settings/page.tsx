@@ -284,7 +284,7 @@ export default async function SettingsPage() {
 
                   
 
-                  <div > BYT:
+                  <div > INF:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="spiritual"
