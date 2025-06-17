@@ -155,8 +155,8 @@ export default async function SettingsPage() {
         name: name ?? undefined,
         colorSchema: colorSchema ?? undefined,
         persDescription:
-          persDescription ?? "Образ закутанный мешковидной тканью",
-        shortVision: shortVision ?? "Незнакомец",
+          persDescription ?? " ",
+        shortVision: shortVision ?? " ",
         look: look ?? "-",
         loyality: loyality ?? "0",
         karma: karma ?? "-",

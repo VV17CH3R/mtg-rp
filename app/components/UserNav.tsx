@@ -15,7 +15,6 @@ import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 
 export const navPers = [
   { name: "Визитка", href: "/dashboard", icon: Castle },
-  { name: "Характеристики", href: "/dashboard/char", icon: Crown },
   { name: "Инвентарь", href: "/dashboard/inventory", icon: Backpack }
 ];
 
