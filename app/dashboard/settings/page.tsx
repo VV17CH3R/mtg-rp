@@ -196,7 +196,7 @@ export default async function SettingsPage() {
 
 
 
-                    <div > WP:
+                    <div > F8:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="karma"
