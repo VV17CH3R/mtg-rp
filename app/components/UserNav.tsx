@@ -96,9 +96,9 @@ export function UserNav({
                   href="/dashboard/settings"
                   className="w-full  flex justify-between items-center"
                 >
-                  Редактировать
+                  Персонаж
                   <span>
-                    <Settings/>
+                    <Crown/>
                   </span>
                 </Link>
           </DropdownMenuItem>
