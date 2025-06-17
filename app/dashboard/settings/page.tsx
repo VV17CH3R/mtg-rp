@@ -70,6 +70,9 @@ async function getData(userId: string) {
       loyality: true,
       expirience: true,
       karma: true,
+      level: true,
+      spiritual: true,
+      phisical: true
     },
   });
 
@@ -109,9 +112,8 @@ export default async function SettingsPage() {
     const shortVision = formData.get("shortVision") as string;
     const look = formData.get("look") as string;
     const loyality = formData.get("loyality") as string;
-
     const PhysBody = formData.get("PhysBody") as string;
-    const PsyBody = formData.get("PsyBody") as string;
+    const PsyBody = formData.get("hp") as string;
     const PhysMind = formData.get("PhysMind") as string;
     const PsyMind = formData.get("PsyMind") as string;
     const PhysKrasota = formData.get("PhysKrasota") as string;
@@ -120,9 +122,12 @@ export default async function SettingsPage() {
     const PsyInt = formData.get("PsyInt") as string;
     const PhysRzum = formData.get("PhysRzum") as string;
     const PsyRazum = formData.get("PsyRazum") as string;
-
     const karma = formData.get("karma") as string;
     const exp = formData.get("exp") as string;
+    const level = formData.get("level") as string;
+    const spiritual = formData.get("spiritual") as string;
+    const phisical = formData.get("phisical") as string;
+
 
     await prisma.charsOfPers.update({
       where: {
@@ -156,6 +161,9 @@ export default async function SettingsPage() {
         loyality: loyality ?? "0",
         karma: karma ?? "-",
         expirience: exp ?? "0",
+        level: level ?? "0",
+        spiritual: spiritual ?? "0",
+        phisical: phisical ?? "0",
       },
     });
 
@@ -188,7 +196,7 @@ export default async function SettingsPage() {
 
 
 
-                    <div > AS:
+                    <div > WP:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="karma"
@@ -213,12 +221,12 @@ export default async function SettingsPage() {
                 </div>
 
 
-                <div className="flex justify-between">
-                  <div >ARM:
+                <div className="mt-16 flex justify-between">
+                  <div >WIS:
                     <Input
                       className="  w-[72px] z-50 justify-center text-center items-center text-xl"
-                      id="hp"
-                      name="hp"
+                      id="PsyKrasota"
+                      name="PsyKrasota"
                       type="text"
                       defaultValue={charOfPers?.PsyKrasota ?? "1"}
                     />
@@ -226,11 +234,11 @@ export default async function SettingsPage() {
 
 
 
-                    <div > AGI:
+                    <div > AS:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
-                      id="eda"
-                      name="eda"
+                      id="PsyRazum"
+                      name="PsyRazum"
                       type="text"
                       defaultValue={charOfPers?.PsyRazum ?? "0"}
                     />
@@ -239,13 +247,50 @@ export default async function SettingsPage() {
 
                   
 
-                  <div > FAT:
+                  <div > STR:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
-                      id="sleep"
-                      name="sleep"
+                      id="PsyMind"
+                      name="PsyMind"
                       type="text"
                       defaultValue={charOfPers?.PsyMind ?? "0"}
+                    />
+                  </div>
+                </div>
+
+                <div className="flex justify-between">
+                  <div >PER:
+                    <Input
+                      className="  w-[72px] z-50 justify-center text-center items-center text-xl"
+                      id="level"
+                      name="level"
+                      type="text"
+                      defaultValue={data?.level ?? "1"}
+                    />
+                  </div>
+
+
+
+                    <div > AGI:
+                    <Input
+                      className="w-[72px] z-50 justify-center text-center items-center text-xl"
+                      id="phisical"
+                      name="phisical"
+                      type="text"
+                      defaultValue={data?.phisical ?? "0"}
+                    />
+                  </div>
+                  
+
+                  
+
+                  <div > BYT:
+                    <Input
+                      className="w-[72px] z-50 justify-center text-center items-center text-xl"
+                      id="spiritual"
+                      name="spiritual"
+                      type="text"
+                      defaultValue={data?.spiritual ?? "0"}
                     />
                   </div>
                 </div>
