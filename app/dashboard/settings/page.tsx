@@ -371,18 +371,6 @@ export default async function SettingsPage() {
                   </div>
                 </div>
 
-                <div className="flex my-6  justify-around items-center">
-                  <div className="w-44 text-2xl">Аура: </div>
-                  <div>
-                    <Input
-                      className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
-                      id="karma"
-                      name="karma"
-                      type="text"
-                      defaultValue={data?.karma ?? "1"}
-                    />
-                  </div>
-                </div>
 
                 {/* <div className="flex my-6  justify-around items-center">
                   <div className="w-44 text-2xl">Вес мира: </div>
