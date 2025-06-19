@@ -184,7 +184,7 @@ export default async function SettingsPage() {
             <CardContent>
               <div className="mt-[15px]">
                 <div className="flex justify-between">
-                  <div >HP:
+                  <div >Здоровье:
                     <Input
                       className="  w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="hp"
@@ -196,7 +196,7 @@ export default async function SettingsPage() {
 
 
 
-                    <div > F8:
+                    <div > Вера:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="karma"
@@ -209,7 +209,7 @@ export default async function SettingsPage() {
 
                   
 
-                  <div > NRG:
+                  <div > Воля:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="exp"
@@ -221,8 +221,13 @@ export default async function SettingsPage() {
                 </div>
 
 
-                <div className="mt-16 flex justify-between">
-                  <div >WIS:
+                <div className="text-lg ml-6 text-start mt-6 font-bold text-primary">
+                  Бонусы к броскам:{" "}
+                </div>
+
+
+                <div className=" mt-2 flex justify-between">
+                  <div >Мудрость:
                     <Input
                       className="  w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="PsyKrasota"
@@ -234,7 +239,7 @@ export default async function SettingsPage() {
 
 
 
-                    <div > AS:
+                    <div > Скорость:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="PsyRazum"
@@ -247,7 +252,7 @@ export default async function SettingsPage() {
 
                   
 
-                  <div > STR:
+                  <div > Сила:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="PsyMind"
@@ -259,7 +264,7 @@ export default async function SettingsPage() {
                 </div>
 
                 <div className="flex justify-between">
-                  <div >PER:
+                  <div >Харизма:
                     <Input
                       className="  w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="level"
@@ -271,7 +276,7 @@ export default async function SettingsPage() {
 
 
 
-                    <div > AGI:
+                    <div > Выносл.:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="phisical"
@@ -284,7 +289,7 @@ export default async function SettingsPage() {
 
                   
 
-                  <div > INF:
+                  <div > Удача:
                     <Input
                       className="w-[72px] z-50 justify-center text-center items-center text-xl"
                       id="spiritual"
@@ -403,7 +408,7 @@ export default async function SettingsPage() {
                 </div>
 
                 <div className="flex mt-2  justify-around items-center">
-                  <div className=" w-44 text-2xl">Тело </div>
+                  <div className=" w-44 text-2xl">Тела </div>
                   <div>
                     <Input
                       className=" mx-4 w-32 flex justify-center text-center items-center text-4xl"
@@ -416,7 +421,7 @@ export default async function SettingsPage() {
                 </div>
                 <div className=" flex flex-col text-center justify-center items-center">
                   <span className="text-xs text-muted-foreground">
-                    {`(Выносливость +3, Сила +3, эффективность артефактов)`}
+                    {`(Сила +3, эффективность артефактов, здоровье)`}
                   </span>
                 </div>
 
@@ -434,7 +439,7 @@ export default async function SettingsPage() {
                 </div>
                 <div className=" flex flex-col text-center justify-center items-center">
                   <span className="text-xs text-muted-foreground">
-                    {`(Восприятие +3, Ловкость +3, эффективность мгновенных заклинаний)`}
+                    {`(Скорость +3, эффективность мгновенных заклинаний)`}
                   </span>
                 </div>
 
@@ -452,7 +457,7 @@ export default async function SettingsPage() {
                 </div>
                 <div className=" flex flex-col text-center justify-center items-center">
                   <span className="text-xs text-muted-foreground">
-                    {`(Убеждение +3, эффективность чар)`}
+                    {`(Харизма +3, эффективность чар)`}
                   </span>
                 </div>
 
@@ -470,7 +475,7 @@ export default async function SettingsPage() {
                 </div>
                 <div className=" flex flex-col text-center justify-center items-center">
                   <span className="text-xs text-muted-foreground">
-                    {`(Запас маны, +3 Знание, кол-во заклинаний)`}
+                    {`(Запас маны, +3 Мудрость, кол-во заклинаний)`}
                   </span>
                 </div>
 
@@ -488,7 +493,7 @@ export default async function SettingsPage() {
                 </div>
                 <div className=" flex flex-col text-center justify-center items-center">
                   <span className="text-xs text-muted-foreground">
-                    {`(Эфективность волшебства, Макс. запас энергии, Ментальная устойчивость +3)`}
+                    {`(Эффективность волшебства, запас Воли, Выносливость +3)`}
                   </span>
                 </div>
               </div>
