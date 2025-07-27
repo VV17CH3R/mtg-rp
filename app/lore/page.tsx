@@ -1,6 +1,6 @@
 
 import { cn } from "@/lib/utils";
-import { Axe, Backpack, Book, Leaf, Feather , ScrollText, Shield } from "lucide-react";
+import { Axe, Backpack, Book, Leaf, Feather , ScrollText, Shield, Blinds } from "lucide-react";
 import Link from "next/link";
 
 const loreItems = [
@@ -10,6 +10,7 @@ const loreItems = [
   { name: "Заклинания", href: "/lore/all-spells", icon: ScrollText },
   { name: "Вступление", href: "/lore/start", icon: Feather },
   { name: "Таблица защиты", href: "/lore/armor", icon: Shield },
+  { name: "Древние тексты", href: "/lore/anc", icon: Blinds },
   
 
 //   { name: "Примеры талантов", href: "/lore/talantsexempl", icon: Axe },
