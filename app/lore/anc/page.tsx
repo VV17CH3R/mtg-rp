@@ -508,7 +508,7 @@ export default function AncRulesPg() {
         <div className="flex justify-center  items-center ">
             <text className="mt-6">
                 {arr.map((el, indx) => (
-                    <div key={indx} className="mx-6"><p ><span className="text-xl font-extrabold text-primary mr-3"> Уровень  {indx + 1}</span>{el.text}</p><br/></div>
+                    <div key={indx} className="mx-6"><p ><span className="text-xl font-extrabold text-primary mr-3"> Загадка  {indx + 1}</span>{el.text}</p><br/></div>
                 ))}
                 
             
